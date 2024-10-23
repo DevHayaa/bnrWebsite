@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+        <nav class="shadow-sm">
+            <div class="wrapper">
+              <div class="logo ms-xl-5"><a href="../index.html"><img src="../images/BnR360.webp" height="68" width="120" srcset=""></a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links mt-3">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Product <i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Product</label>
+                
+                    <div class="mega-box">
+                        <div class="content justify-content-center">
+                            <div class="d-lg-flex d-xl-flex col-lg-12 col-xl-12">
+                                <!-- Tabs for switching content -->
+                                <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                    <li id='tab1'>
+                                        <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Sphere <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                        <!-- <h6>All-in-one platform for recruitment, CRM, and ERP.</h6> -->
+                                    </li>
+                                    <li id='tab2'>
+                                        <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Genrapid <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                     <!-- <h6>AI tools for bid prep,resume tailoring, and RFP management.</h6> -->
+                                    </li>
+                                    <li id='tab3'>
+                                        <a href="#home_tab3" class="tab-link" onclick="showTabContent(event, 'home_tab3')">Supporting Product <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                     <!-- <h6>AI chatbots and parsers for recruitment and bids.</h6> -->
+                                    </li>
+                                </ul>
+                
+                                <!-- Content Sections -->
+                                <div class="tab-content col-lg-9 col-xl-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">CRM</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Applicant Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Partner and Client Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Security Management</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">ERP</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Job Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Corporate Reference</a></li>
+                                                        <li><a href="../pages/sphere.html">Prowin Prep</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Data Analytics</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Reporting and Dashboard</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab2" style="display:none;">
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">ProReshape</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">AI-enhanced resume tailoring.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">RFP Decoder</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Automated RFP data extraction.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">RFP List</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Organized RFP tracking.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Dashboard</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Real-time insights for bids and proposals.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab3" style="display:none;">
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">AI Recruitment Chatbot</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Automated candidate engagement.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Resume Parser</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Extracts and organizes resume data.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Prowin Prep</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Bid prep with partner seamless collaboration.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Exclusive Bundle</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Combo of all supporting products.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Services<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownServices" class="toggle-dropdown">
+                    <label for="showDropdownServices" class="mobile-item">Services</label>
+                
+                    <div class="mega-box">
+                        <div class="content justify-content-center">
+                            <div class="d-xl-flex d-lg-flex col-12">
+                                <!-- Tabs for switching content -->
+                                <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                    <li id='tab1'>
+                                        <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Services <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                    <!-- <h6>Services 
+                                        Flexible plans with dedicated resources for recruitment and bids. </h6> -->
+                                    </li>
+                                    <li id='tab2'>
+                                        <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Solutions <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                      <!-- <h6>Turnkey packages for launching and scaling. 
+                                    </h6> -->
+                                    </li>
+                                </ul>
+                
+                                <!-- Content Sections -->
+                                <div class="tab-content col-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                    <div class="content-box">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <!-- Free Trial Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Free Trial</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">No Credit Card needed</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Basic Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Basic</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">For smaller agencies or specific needs</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Professional Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Professional</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">For Growing Agencies</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-9 text-black ms-3 mt-3" id="home_tab2" style="display: none;">
+                                    <div class="content-box">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <!-- Agency Launch Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Agency Launch</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Setup for new recruitment agencies</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Expansion & Scale Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Expansion & Scale</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Grow with advanced tools.</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Government RFP Mastery Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Government RFP Mastery</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Win complex government bids.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                
+                </li>
+                
+                  <li>
+                    <a href="#" class="desktop-item">Pricing<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownPricing" class="toggle-dropdown">
+                    <label for="showDropdownPricing" class="mobile-item">Pricing</label>
+              
+                    <div class="mega-box">
+                      <div class="content justify-content-center">
+                        <!-- Content Sections -->
+                        <div class="active text-dark">
+                            <div class="content-box">
+                              <div class="">
+                                <ul class="d-lg-flex d-xl-flex">
+                                  <a href="../pages/pricing.html#sphere"><li>Sphere</li></a>
+                                  <a href="../pages/pricing.html#genrapid"><li>Genrapide</li></a>
+                                  <a href="../pages/pricing.html#solution"><li>Solution</li></a>
+                                  <a href="../pages/pricing.html#service"><li>Services</li></a>
+                                  <a href="../pages/pricing.html"><li>Supporting Products</li></a>
+                                  <a href="../pages/pricing.html"><li>Pay per need</li></a>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>        
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-item">Resources<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownResources" class="toggle-dropdown">
+                    <label for="showDropdownResources" class="mobile-item">Resources</label>
+              
+                    <div class="mega-box">
+                      <div class="content justify-content-center">
+                        <!-- Content Sections -->
+                        <div class="active text-dark">
+                            <div class="content-box">
+                              <div class="">
+                                <ul class="d-lg-flex d-xl-flex">
+                                  <a href="../pages/blogs.html"><li>Blogs</li></a>
+                                  <a href="../pages/case-study.html"><li>Customer stories</li></a>
+                                  <a href="../pages/growth.html"> <li>Press release</li></a>
+                                  <a href="../pages/contact.html"><li>Help and support</li></a>
+                                  <a href="../pages/contact.html"><li>Contact us</li></a>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>        
+                      </div>
+                    </div>
+                  </li>
+                  <div class="contact d-lg-flex ms-xl-5">
+                    <li class="ms-xl-5">
+                        <a href="#" class="desktop-item">Sign in</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Sign in</label>
+                        <ul class="drop-menu">
+                          <h6 class=""><a href="https://sphere.bnr360.com/login"><i class="fas fa-sign-in mx-2"></i>Sphere</h6></a>
+                          <h6><a href="https://genrapide.bnr360.com/signin"><i class="fas fa-sign-in arrow mx-2"></i>Genrapide</h6></a>
+                        </ul>
+                      </li>
+                      <a class="btxx-two" href="pages/contact.html">Request a Demo</a>
+                      <a class="btxx-one" href="https://sphere.bnr360.com/signup-trial">Start a free trial</a>
+                  </div>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"  style="color: black;"></i></label>
+            </div>
+          </nav>
+          
+
+        <div class="blogs-banner">
+            <div class="px-10">
+                <div class="main-blogs">
+                    <img src="../images/Layer 4.webp" alt="">
+                    <div class="blogs-context">
+                        <h2>Blogs</h2>
+                        <p>Dive into expert articles about BnR360's products, services and solutions-written by industry experts, only for you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pxx-10">
+            <div class="article-post text-center">
+                <div class="article-pg">
+                    <img class="article-image" src="../images/post4.webp" alt="">
+                </div>
+                <div class="article-content text-left">
+                    <span class="technology">GenRapide</span>
+                    <h2 class="article-heading">The AI Gamechanger for Bidding & Recruitment</h2>
+                    <p>The bidding landscape is a battlefield. Businesses scramble for the same resources, proposals pile
+                        up.
+
+                    </p>
+
+                    <div class="article-account">
+
+                        <div class="article-txt">
+                            <i class="fi fi-sr-user-add"></i>
+                            <div class="date-align">
+                                <h3 style="font-size: 17px;font-weight: 500;">Lucas Benjamin</h3>
+                                <h6 style="font-size: 12px; color: #928181;">13/3/2024</h6>
+                            </div>
+                        </div>
+                      <!--  <div class="social-media-links">
+
+                            <ul>
+                                Share
+                                <li><a href="https://www.facebook.com/people/BnR360/100093720805116/" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                            class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="articles">
+                <div>In today's fiercely competitive business environment, BnR 360's GenRapide emerges as a
+                    game-changer, revolutionizing bidding and recruitment through the power of AI. This comprehensive
+                    suite of tools tackles the most time-consuming aspects of these processes – proposal writing and
+                    candidate selection – automating them for optimal efficiency and precision.
+                </div>
+
+                <div>GenRapide boasts a range of innovative features designed to streamline your operations. ProReshape
+                    utilizes generative AI to craft customized proposals that precisely meet the unique requirements of
+                    each RFP, saving you time and ensuring your submissions are highly relevant and accurate. RFPDecoder
+                    eliminates the hurdle of tedious RFP analysis by using AI to quickly and accurately interpret
+                    essential details. This frees up your team to focus on strategizing winning proposals.
+                </div>
+
+                <div>On the recruitment front, ProResource Find utilizes AI to meticulously match skills and experiences
+                    to specific job requirements, significantly speeding up the process by ensuring only the most
+                    qualified candidates reach your desk. Bid Tracking offers real-time updates on the status of your
+                    bids, allowing you to react promptly and maintain competitiveness throughout the bidding process.
+                </div>
+
+
+                <div>The benefits of implementing GenRapide are numerous. Repetitive tasks become automated, freeing up
+                    your team to focus on strategic initiatives and client engagement. AI minimizes human error in data
+                    interpretation and proposal writing, leading to more precise bids and a more accurate recruitment
+                    process. GenRapide also boasts unmatched scalability, adapting to your needs and growing seamlessly
+                    alongside your business. Faster, more accurate proposals and high-quality candidate placements give
+                    you a significant edge in both bidding and recruitment, propelling your business forward.
+                </div>
+
+                <div>
+                    As AI technology continues to evolve, GenRapide will too. Expect even more powerful features on the
+                    horizon, including deeper learning capabilities, advanced analytics, and an even more user-friendly
+                    interface. These enhancements ensure GenRapide remains at the forefront of bidding and recruitment
+                    technology.
+                </div>
+
+                <div>
+
+                    GenRapide goes beyond just being software; it's a comprehensive solution designed to transform how
+                    you approach bidding and recruitment. BnR 360's AI-powered suite empowers your business with
+                    unmatched efficiency and success.
+                </div>
+            </div>
+
+            <div class="follow-site-links">
+                <span style="    padding-top: 2px;
+                ">Follow BnR360</span>
+                <ul>
+                    <li><a href="https://www.facebook.com/people/BnR360/100093720805116/" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/BnR360" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-footer">
+            <footer class="three">
+                <div class="container">
+                    <div class="row g-lg-4 gy-5">
+                        <div class="col-lg-4 col-sm-6 d-flex">
+                            <div class="footer-widget">
+                                <div class="footer-contact ">
+                                    <h4>
+                                        <i class="fi fi-rr-paper-plane"></i>
+                                        <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                                </div>
+                                <div class="footer-contact mb-40">
+                                    <h4><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.29163 14.6767V18.5417C7.29227 18.6731 7.33422 18.8009 7.41154 18.9071C7.48886 19.0133 7.59764 19.0924 7.72245 19.1334C7.84727 19.1743 7.9818 19.1749 8.10699 19.1351C8.23217 19.0954 8.34167 19.0172 8.41997 18.9117L10.6808 15.8351L7.29163 14.6767ZM19.7375 0.115895C19.6436 0.0490233 19.533 0.00942685 19.418 0.00148505C19.303 -0.00645676 19.188 0.0175656 19.0858 0.0708953L0.3358 9.86256C0.227918 9.91958 0.13903 10.0069 0.0800422 10.1137C0.0210548 10.2205 -0.00546466 10.3422 0.00373833 10.4639C0.0129413 10.5855 0.0574664 10.7019 0.131849 10.7986C0.206232 10.8953 0.307236 10.9683 0.422467 11.0084L5.63497 12.7901L16.7358 3.2984L8.1458 13.6476L16.8816 16.6334C16.9683 16.6625 17.0603 16.6723 17.1512 16.6622C17.2421 16.652 17.3296 16.6221 17.4078 16.5746C17.4859 16.527 17.5526 16.463 17.6034 16.3869C17.6542 16.3108 17.6877 16.2246 17.7016 16.1342L19.9933 0.717562C20.0103 0.603437 19.9953 0.486844 19.9502 0.380665C19.905 0.274486 19.8314 0.182855 19.7375 0.115895Z">
+                                            </path>
+                                        </svg>Say Hello</h4><a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                        href="mailto:support@bnr360.com">support@bnr360.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                            <div class="footer-widget">
+                                <div class="widget-title">
+                                    <h4>Products</h4>
+                                </div>
+                                <div class="menu-container">
+                                    <ul>
+                                        <li><a href="../pages/genrapide.html">GeneRapide</a></li>
+                                        <li><a href="../pages/sphere.html">Sphere</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                            <div class="footer-widget">
+                                <div class="widget-title">
+                                    <h4>Services</h4>
+                                </div>
+                                <div class="menu-container">
+                                    <ul>
+                                        <li><a href="../pages/service.html">TurnKey Solutions</a>
+                                        </li>
+                                        <li><a href="../pages/service.html">Enterprise</a></li>
+                                        <li><a href="../pages/service.html">Pay Per Need</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                            <div class="footer-widget">
+                                <div class="widget-title">
+                                    <h4>Resources</h4>
+                                </div>
+                                <div class="menu-container">
+                                    <ul>
+                                        <li><a href="../pages/contact.html">Contact</a></li>
+                                        <li><a href="../pages/blogs.html">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-btm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer-btn-content">
+                                    <div class="copyright-area">
+                                        <p>©Copyright 2024 <a href="#">BnR360</a></p>
+                                    </div>
+                                    <div class="footer-social">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                    target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                        class="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                        class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script>
+                const OpenButton = document.querySelector(".header-toggle")
+           const CloseButton = document.querySelector(".header-close")
+   
+           OpenButton.addEventListener("click", () => {
+               mainWrapper = document.getElementById("wrap");
+               mainWrapper.classList.add("active")
+           })
+   
+           CloseButton.addEventListener("click", () => {
+               mainWrapper = document.getElementById("wrap");
+               mainWrapper.classList.remove("active")
+           })
+           </script>
+               <script>
+                function hideOtherTabs(tabList, tab, tabPrefix) {
+                    for (index = 0; index < tabList.length; index++) {
+                        if (tabPrefix + tab != tabPrefix + tabList[index]) {
+                            $('div#' + tabPrefix + tabList[index]).hide();
+                        }
+                    }
+                }
+                
+                $(document).ready(function() {
+                    var tabPrefix = 'home_';
+                    var tabs = ['tab1', 'tab2', 'tab3'];
+                
+                    // Hide all tabs initially
+                    for (index = 0; index < tabs.length; index++) {
+                        jQuery('div#' + tabPrefix + tabs[index]).hide();
+                    }
+                
+                    // Show the first tab by default
+                    var firstTab = tabs[0];
+                    $('div#' + tabPrefix + firstTab).show();
+                
+                    // Set the first tab as active
+                    $('ul.tab_links li#' + firstTab).addClass('active');
+                
+                    // Hide others
+                    hideOtherTabs(tabs, firstTab, tabPrefix);
+                
+                    // Set up click event for tab links
+                    $('ul.tab_links li').click(function() {
+                        var tabID = $(this).attr('id');
+                
+                        // Show this tab
+                        $('div#' + tabPrefix + tabID).show();
+                
+                        // Hide others
+                        hideOtherTabs(tabs, tabID, tabPrefix);
+                
+                        // Remove active class from all tabs and add to the current one
+                        $('ul.tab_links li').removeClass('active');
+                        $(this).addClass('active');
+                    });
+                });
+                </script>
+    </body>
+</body>
+
+</html>

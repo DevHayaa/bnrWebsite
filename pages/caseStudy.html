@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: BnR360's Strategic Partnership with Zernam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+
+
+
+<body>
+
+    <header>
+        <div class="head1 px-10 hide">
+            <a href="">
+                <img src="/images/BnR360.webp" alt="">
+            </a>
+            <div>
+                <button id="member" class="btn dropdown-toggle" style="border: none;padding-top: 25px;" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Product Sign in
+                </button>
+                <ul class="dropdown-menu" style="background-color: black; color:white;">
+                    <li><a class="dropdown-item inner-drop" href="https://sphere.bnr360.com/login">Sphere</a>
+                    </li>
+                    <li><a class="dropdown-item inner-drop" href="https://genrapide.bnr360.com/signin">GenRapide</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="navigation px-10">
+            <i class="fi fi-sr-menu-burger ban header-toggle"></i>
+            <ul class="inner-nav" id="wrap">
+                <i class="fi fi-sr-circle-xmark header-close banq"></i>
+                <li><a class="butn active" href="index.html">Home</a></li>
+
+                <li type="button" id="productLi" onclick="openProducts()">
+                    <button type="button" onblur="blurProducts()" class="border-0 bg-black">
+                        <a id="member" class="btn dropdown-toggle navs small-screen"
+                            style="border: none;padding-top: 0px; color: white; font-size: 20px;" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu drop" style="background-color: black; color:white; min-width: 0;">
+                            <li><a class="dropdown-item inner-drop " href="../pages/sphere.html">Sphere</a></li>
+                            <li><a class="dropdown-item inner-drop " href="../pages/genrapide.html">GenRapide</a></li>
+                        </ul>
+                    </button>
+                </li>
+
+                <li><a class="butn" href="/pages/service.html">Services</a></li>
+                <li><a class="butn" href="/pages/blogs.html">Blogs</a></li>
+                <li><a class="butn" href="/pages/pricing.html">Pricing</a></li>
+                <li><a class="butn" href="pages/caseStudy.html">Case Study</a></li>
+            </ul>
+            <a class="btxx" href="/pages/contact.html">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative hero text-white " style="background-color: #c3c3d5;">
+        <div class="px-10">
+            <div class="flex pl hero-align">
+                <div class="flex flex-col gap-4">
+
+                    <h2 class="optimize text-black">Optimizing Operational Efficiency BnR360's Strategic
+                        Partnership
+                        with
+                    </h2>
+                    <p class="optimize-p mb-6 text-black">Discover how AI-powered solutions streamlined operations and
+                        reduced costs
+                        for
+                        Zernam, a leading staffing firm in Canada.</p>
+                </div>
+                <img src="/images/3.webp" alt="Efficiency Optimization" class="" />
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-16">
+        <div class="px-10">
+
+            <div class="">
+                <!-- Introduction Text -->
+                <div class=" md:text-left text-center intro">
+                    <h2 class="heading1">Transforming Recruitment with AI-Powered
+                        Efficiency</h2>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        BnR360 is revolutionizing the staffing industry with its AI-powered solutions, Sphere and
+                        GenRapide.
+                        These tools significantly enhance operational efficiency and deliver measurable results.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Zernam, a leading IT staffing firm in Canada, used BnR360's technology to reduce costs by 60%
+                        and
+                        streamline recruitment and bidding processes.
+                    </p>
+                </div>
+                <!-- Image on Right -->
+                <!-- <div>
+                    <img src="/images/5.webp" alt="AI-Powered Efficiency" class="rounded-lg wid shadow-md">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Challenges Section -->
+    <section class="py-16 bg-white ">
+        <div class="px-10">
+
+            <div class="flex justify-between challenge">
+                <!-- Image on Left -->
+
+                <img src="/images/pa.webp" alt="Challenges Faced" class="rounded-lg wid shadow-md">
+
+                <!-- Challenges Text on Right -->
+                <div class=" md:text-left ml-8">
+                    <h2 class="heading1">Challenges Faced</h2>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        Zernam encountered several operational challenges, which were hindering their efficiency:
+                    </p>
+                    <ul class="list-disc">
+                        <li>High costs due to maintaining extensive staffing resources.</li>
+                        <li>Absence of customized software solutions tailored to their unique needs.</li>
+                        <li>Inefficiencies caused by unorganized data management systems.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+          <h2 class="heading1 text-center  mb-12">BnR360’s Approach</h2>
+      
+          <!-- Operational Support -->
+          <div class="bg-white shadow-lg rounded-lg p-8 mb-10">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 pb-2 border-gray-300">Operational Support</h3>
+            <p class="text-gray-600 mb-4">BnR360 deployed expert resources to boost Zernam’s capabilities in:</p>
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+              <li><strong>Recruiters:</strong> Enhancing talent acquisition</li>
+              <li><strong>Bid Writers:</strong> Streamlining bid preparation</li>
+              <li><strong>Managers:</strong> Optimizing overall operations management</li>
+            </ul>
+          </div>
+      
+          <!-- Process Improvement -->
+          <div class="bg-white shadow-lg rounded-lg p-8">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-b-2 pb-2 border-gray-300">Process Improvement</h3>
+            <p class="text-gray-600 mb-4">BnR360 introduced key improvements such as:</p>
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+              <li>Customized RACI matrix tailored to Zernam’s operational needs</li>
+              <li>Sphere for data organization and tracking across modules</li>
+              <li>GenRapide for streamlined bid processing, reducing time to access resources</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Results Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Results Achieved</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                The collaboration between BnR360 and Zernam resulted in impressive outcomes:
+            </p>
+
+            <!-- Main Image -->
+            <!-- <div class="mb-8">
+                <img src="images/4.webp" alt="Results Overview" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg">
+            </div> -->
+
+            <div class="space-y-6 mid">
+                <!-- Result 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Cost Efficiency</h3>
+                    <p class="text-gray-600">Achieved a 60% reduction in operational costs through streamlined processes
+                        and efficient resource management.</p>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Enhanced Recruitment Turnaround</h3>
+                    <p class="text-gray-600">Significantly reduced the recruitment cycle, enabling quicker staff
+                        deployment.</p>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">• Improved Process Visibility</h3>
+                    <p class="text-gray-600">Sphere provided insights into procedural errors for timely corrections,
+                        enhancing real-time data visibility and organized storage to improve decision-making and
+                        operational transparency.</p>
+                </div>
+                <!-- Future Plans Section -->
+
+            </div>
+    </section>
+
+
+     <!-- Approach Section -->
+     <section class="pb-14 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-center heading1 pt-12 pb-12">Insert Client Testimonial</h2>
+            <!-- <p class="text-lg leading-relaxed mb-12 text-center mx-auto max-w-3xl text-gray-800">
+                To address Zernam’s operational challenges, BnR360 deployed expert resources and implemented tailored
+                solutions. These included:
+            </p> -->
+
+            <!-- Animated Approach Steps -->
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Step 1 -->
+                <div
+                    class="transform transition-transform duration-300 hover:scale-105 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">conclusion</h3>
+                    <p class="text-lg text-gray-700">
+                        The partnership between BnR360 and Zernam exemplifies the transformative potential of
+                        integrating AI-driven solutions in the staffing and recruitment industry. The substantial
+                        improvements in operational efficiency and cost-effectiveness set a benchmark for future
+                        collaborations.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div
+                    class="transform transition-transform duration-300 hover:scale-105 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Future Plans</h3>
+                    <p class="text-lg text-gray-700">
+                        BnR360 and Zernam are committed to continuing their partnership, aiming to further enhance
+                        operational efficiencies and explore new areas for technological integration.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div
+                    class="transform transition-transform duration-300 hover:scale-105 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Call to Action</h3>
+                    <p class="text-lg text-gray-700">
+                        Are you looking to enhance your organization's efficiency and reduce operational costs? Contact
+                        BnR360 today to discover how our AI-powered solutions can be tailored to meet your unique needs
+                        and drive your business forward.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional CSS for hover effect -->
+    <style>
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <div class="main-footer">
+        <footer class="three">
+            <div class="container">
+                <div class="row g-lg-4 gy-5">
+                    <div class="col-lg-4 col-sm-6 d-flex">
+                        <div class="footer-widget">
+                            <div class="footer-contact ">
+
+                                <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                            </div>
+                            <div class="footer-contact mb-40">
+                                <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                    href="mailto:support@bnr360.com">support@bnr360.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Products</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/genrapide.html">GenRapide</a></li>
+                                    <li><a href="/pages/sphere.html">Sphere</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/service.html">TurnKey Solutions</a></li>
+                                    <li><a href="/pages/service.html">Enterprise</a></li>
+                                    <li><a href="/pages/service.html">Pay Per Need</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Resources</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/contact.html">Contact</a></li>
+                                    <li><a href="/pages/blogs.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-btn-content">
+                                <div class="copyright-area">
+                                    <p>©Copyright 2024</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+          const OpenButton = document.querySelector(".header-toggle")
+        const CloseButton = document.querySelector(".header-close")
+
+        OpenButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.add("active")
+        })
+
+        CloseButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.remove("active")
+        })
+    </script>
+
+</body>
+
+</html>

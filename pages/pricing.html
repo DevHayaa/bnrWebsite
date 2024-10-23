@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<style>
+        /* Tab styles */
+        .nav-tabs .nav-link {
+      border: 1px solid transparent;
+      color: black;
+      background-color: transparent;
+      border-radius: 0;
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+
+    .nav-tabs .nav-link.active {
+        background:linear-gradient(180deg, #439cd9, #37376b);
+        color: white;
+      border-radius: 50px;
+    }
+    .nav-tabs {
+    border-bottom: none; /* Removes the bottom border of the tabs */
+    }
+  h6 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: black;
+      font-size: 18px;
+      text-align: center;
+    }
+    .section-title {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+    }
+    ul {
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+      font-size: 14px;
+      color: black;
+      text-align: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    li:hover {
+      color: #000;
+      font-weight: 500;
+    }
+    .containerr {
+      max-width: 900px;
+    }
+     /* Enhancements */
+     .mega-box .row .col-md-2 {
+      margin-bottom: 15px;
+    }
+    ul.d-flex {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    ul.d-flex li {
+      font-size: 16px;
+      color: #333;
+      padding: 0px 40px;
+      margin: 5px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    ul.d-flex li:hover {
+        background: linear-gradient(180deg, #439cd9, #37376b);
+        color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      ul.d-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      ul.d-flex li {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .desktop-item i {
+  font-size: 0.8rem; /* Adjust this value to make the icon smaller or larger */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+.arrow {
+  font-size: 0.8rem; /* Same size adjustment for the arrow */
+  margin-left: 5px; /* Space between text and arrow */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+/* Rotate the arrow when the dropdown is active */
+.toggle-dropdown:checked + label + .dropdown ~ a .arrow {
+  transform: rotate(180deg); /* Rotate arrow */
+}
+.col-md-2{
+    width: 220px;
+}
+</style>
+<body>
+    <nav class="shadow-sm">
+        <div class="wrapper">
+          <div class="logo ms-xl-5"><a href="../index.html"><img src="../images/BnR360.webp" height="68" width="120" srcset=""></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links mt-3">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li>
+                <a href="#" class="desktop-item">Product <i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Product</label>
+            
+                <div class="mega-box">
+                    <div class="content justify-content-center">
+                        <div class="d-lg-flex d-xl-flex col-lg-12 col-xl-12">
+                            <!-- Tabs for switching content -->
+                            <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                <li id='tab1'>
+                                    <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Sphere <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                    <!-- <h6>All-in-one platform for recruitment, CRM, and ERP.</h6> -->
+                                </li>
+                                <li id='tab2'>
+                                    <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Genrapid <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                 <!-- <h6>AI tools for bid prep,resume tailoring, and RFP management.</h6> -->
+                                </li>
+                                <li id='tab3'>
+                                    <a href="#home_tab3" class="tab-link" onclick="showTabContent(event, 'home_tab3')">Supporting Product <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                 <!-- <h6>AI chatbots and parsers for recruitment and bids.</h6> -->
+                                </li>
+                            </ul>
+            
+                            <!-- Content Sections -->
+                            <div class="tab-content col-lg-9 col-xl-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">CRM</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Applicant Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Partner and Client Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Security Management</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">ERP</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Job Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Corporate Reference</a></li>
+                                                    <li><a href="../pages/sphere.html">Prowin Prep</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Data Analytics</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Reporting and Dashboard</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab2" style="display:none;">
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">ProReshape</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">AI-enhanced resume tailoring.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">RFP Decoder</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Automated RFP data extraction.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">RFP List</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Organized RFP tracking.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Dashboard</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Real-time insights for bids and proposals.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab3" style="display:none;">
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">AI Recruitment Chatbot</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Automated candidate engagement.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Resume Parser</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Extracts and organizes resume data.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Prowin Prep</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Bid prep with partner seamless collaboration.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Exclusive Bundle</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Combo of all supporting products.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <a href="#" class="desktop-item">Services<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownServices" class="toggle-dropdown">
+                <label for="showDropdownServices" class="mobile-item">Services</label>
+            
+                <div class="mega-box">
+                    <div class="content justify-content-center">
+                        <div class="d-xl-flex d-lg-flex col-12">
+                            <!-- Tabs for switching content -->
+                            <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                <li id='tab1'>
+                                    <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Services <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                <!-- <h6>Services 
+                                    Flexible plans with dedicated resources for recruitment and bids. </h6> -->
+                                </li>
+                                <li id='tab2'>
+                                    <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Solutions <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                  <!-- <h6>Turnkey packages for launching and scaling. 
+                                </h6> -->
+                                </li>
+                            </ul>
+            
+                            <!-- Content Sections -->
+                            <div class="tab-content col-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                <div class="content-box">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <!-- Free Trial Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Free Trial</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">No Credit Card needed</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Basic Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Basic</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">For smaller agencies or specific needs</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Professional Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Professional</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">For Growing Agencies</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-9 text-black ms-3 mt-3" id="home_tab2" style="display: none;">
+                                <div class="content-box">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <!-- Agency Launch Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Agency Launch</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Setup for new recruitment agencies</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Expansion & Scale Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Expansion & Scale</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Grow with advanced tools.</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Government RFP Mastery Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Government RFP Mastery</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Win complex government bids.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            
+            </li>
+            
+              <li>
+                <a href="#" class="desktop-item">Pricing<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownPricing" class="toggle-dropdown">
+                <label for="showDropdownPricing" class="mobile-item">Pricing</label>
+          
+                <div class="mega-box">
+                  <div class="content justify-content-center">
+                    <!-- Content Sections -->
+                    <div class="active text-dark">
+                        <div class="content-box">
+                          <div class="">
+                            <ul class="d-lg-flex d-xl-flex">
+                              <a href="../pages/pricing.html#sphere"><li>Sphere</li></a>
+                              <a href="../pages/pricing.html#genrapid"><li>Genrapide</li></a>
+                              <a href="../pages/pricing.html#solution"><li>Solution</li></a>
+                              <a href="../pages/pricing.html#service"><li>Services</li></a>
+                              <a href="../pages/pricing.html"><li>Supporting Products</li></a>
+                              <a href="../pages/pricing.html"><li>Pay per need</li></a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>        
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="desktop-item">Resources<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownResources" class="toggle-dropdown">
+                <label for="showDropdownResources" class="mobile-item">Resources</label>
+          
+                <div class="mega-box">
+                  <div class="content justify-content-center">
+                    <!-- Content Sections -->
+                    <div class="active text-dark">
+                        <div class="content-box">
+                          <div class="">
+                            <ul class="d-lg-flex d-xl-flex">
+                              <a href="../pages/blogs.html"><li>Blogs</li></a>
+                              <a href="../pages/case-study.html"><li>Customer stories</li></a>
+                              <a href="../pages/growth.html"> <li>Press release</li></a>
+                              <a href="../pages/contact.html"><li>Help and support</li></a>
+                              <a href="../pages/contact.html"><li>Contact us</li></a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>        
+                  </div>
+                </div>
+              </li>
+              <div class="contact d-lg-flex ms-xl-5">
+                <li class="ms-xl-5">
+                    <a href="#" class="desktop-item">Sign in</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Sign in</label>
+                    <ul class="drop-menu">
+                      <h6 class=""><a href="https://sphere.bnr360.com/login"><i class="fas fa-sign-in mx-2"></i>Sphere</h6></a>
+                      <h6><a href="https://genrapide.bnr360.com/signin"><i class="fas fa-sign-in arrow mx-2"></i>Genrapide</h6></a>
+                    </ul>
+                  </li>
+                  <a class="btxx-two" href="pages/contact.html">Request a Demo</a>
+                  <a class="btxx-one" href="https://sphere.bnr360.com/signup-trial">Start a free trial</a>
+              </div>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"  style="color: black;"></i></label>
+        </div>
+      </nav>
+      
+
+    <div class="pricing-banner">
+        <div class="px-10">
+            <div class="pricing-inner">
+                <div class="pricing-left-side">
+                    <h2 class="text-white">Plans that fit your need</h2>
+                    <p class="text-white">No matter the size of your business, we have a plan to streamline your bidding and resourcing
+                        processes. Choose from core features to advanced capabilities – find the perfect fit for your
+                        company with BnR360.
+                    </p>
+                    <div class="home-hero-banner">
+                        <a class="btc second-sec" href="#checkpricing">Check pricing</a>
+
+                    </div>
+                </div>
+                <img class="pricing-image" src="../images/Pricing Monitor.webp" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-plan text-center mt-5" id="checkpricing">
+        <h2 class="haedings">Discover Plans For You</h2>
+        <p>BnR360 offers flexible pricing that puts AI-powered efficiency within reach. Pay only for what you need.
+            Discover our plans and unlock your business's full potential.
+        </p>
+    </div>
+   
+      <!-- Tab navigation -->
+      <div class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <div class="nav-item" role="presentation">
+            <button class="nav-link active" id="sphere-tab" data-bs-toggle="tab" data-bs-target="#sphere" type="button" role="tab" aria-controls="sphere" aria-selected="true">Sphere</button>
+        </div>
+        <div class="nav-item" role="presentation">
+            <button class="nav-link" id="genrapid-tab" data-bs-toggle="tab" data-bs-target="#genrapid" type="button" role="tab" aria-controls="genrapid" aria-selected="false">GenRapid</button>
+        </div>
+        <div class="nav-item" role="presentation">
+            <button class="nav-link" id="solution-tab" data-bs-toggle="tab" data-bs-target="#solution" type="button" role="tab" aria-controls="solution" aria-selected="false">Solution</button>
+        </div>
+        <div class="nav-item" role="presentation">
+            <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">Services</button>
+        </div>
+    </div>
+    
+
+    <!-- sphere pricing -->
+ <div class="tab-content mt-4" id="myTabContent">
+    <div class="tab-pane fade show active" id="sphere" role="tabpanel" aria-labelledby="sphere-tab">
+    <div class="container" id="products-pricing">
+        <div class="logo-container">
+            <img src="../images/spheres.webp" alt="Sphere Logo" class="sphere-logo">
+        </div>
+       <div class="container-fluid">
+        <div class="row">
+            <!-- Pricing Toggle -->
+            <div class="col-12 text-center mb-4">
+                <label class="switch">
+                    <input type="checkbox" id="price-toggle" onchange="togglePricing()">
+                    <span class="slider round"></span>
+                </label>
+                <span id="toggle-text">Monthly</span>
+            </div>
+        
+            <!-- Column for Feature Headings -->
+            <div class="col-md-2 mb-4">
+                <div class="h-100">
+                    <div class="solution-body">
+                        <ul class="list-unstyled" style="margin-top: 260px;">
+                            <li><strong>Applicants</strong>:</li>
+                            <li><strong>Jobs</strong>:</li>
+                            <li><strong>Companies</strong>:</li>
+                            <li><strong>Corporate References</strong>:</li>
+                            <li><strong>Security Clearances</strong>:</li>
+                            <li><strong>Contracts</strong>:</li>
+                            <li><strong>File Storage</strong>:</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Column 1: Free Plan (No Change Needed) -->
+            <div class="col-md-2 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Free</h3>
+                        <p class="price">$0.00</p>
+                        <p class="description">Start for free</p>
+                        <a href="https://sphere.bnr360.com/signup" class="cta-button mt-3">Start Now</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ 1000</li>
+                            <li>✔ 2000</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>✔ 2GB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Column 2: Standard Plan -->
+            <div class="col-md-2 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Standard</h3>
+                        <p class="price monthly-price">$29.99/mo</p>
+                        <p class="price yearly-price d-none">$26.99/annually </p>
+                        <p class="description">Affordable for small teams</p>
+                        <a href="https://sphere.bnr360.com/signup" class="cta-button mt-3 pro-price-btn price monthly-price text-white">$29.99/mo</a>
+                        <a href="https://sphere.bnr360.com/signup" class="cta-button mt-3 pro-price-btn price yearly-price d-none text-white">$26.99/ann</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ 2000</li>
+                            <li>✔ 500</li>
+                            <li>✔ 50</li>
+                            <li>✔ 100</li>
+                            <li>✔ 100</li>
+                            <li>✔ 100</li>
+                            <li>✔ 1GB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Column 3: Pro Plan -->
+            <div class="col-md-2 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Pro</h3>
+                        <p class="price monthly-price">$99.99/mo</p>
+                        <p class="price yearly-price d-none">$89.99/annually</p>
+                        <p class="description">Advanced features for large teams</p>
+                        <a href="https://sphere.bnr360.com/signup" class="cta-button mt-0 pro-price-btn price monthly-price text-white">$99.99/mo</a>
+                        <a href="https://sphere.bnr360.com/signup" class="cta-button mt-0 pro-price-btn price yearly-price d-none text-white">$89.99/an</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ 500</li>
+                            <li>✔ 50</li>
+                            <li>✔ 500</li>
+                            <li>✔ 50</li>
+                            <li>✔ 5TB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Column 4: Enterprise Plan -->
+            <div class="col-md-2 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom</p>
+                        <p class="description">Contact sales for pricing</p>
+                        <a href="../pages/contact.html" class="cta-button" >Talk sales</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ Unlimited</li>
+                            <li>✔ As per requirement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+</div> 
+    </div>
+</div>
+
+    <!-- genrapid pricing -->
+    <div class="tab-pane fade" id="genrapid" role="tabpanel" aria-labelledby="genrapid-tab">
+        <div class="container">
+        <div class="logo-container">
+            <img src="../images/GenRapide Logo-new.webp" alt="GenRapide Logo" class="sphere-logo">
+        </div>
+        <div class="row justify-content-center">
+            <!-- Features Column -->
+            <div class="col-md-3 mb-4">
+                <div class="solution-body">
+                    <ul class="list-unstyled" style="margin-top: 150px;">
+                        <li><strong>Tokens:</strong></li>
+                        <li><strong>Documents:</strong></li>
+                        <li><strong>Storage:</strong></li>
+                        <li><strong>Users:</strong></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Basic Plan -->
+            <div class="col-md-3 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Basic</h3>
+                        <a href="https://genrapide.bnr360.com/signup" class="cta-button mt-3">Select Plan</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ 1,000,000 Tokens</li>
+                            <li>✔ 15 Documents</li>
+                            <li>✔ 9.3 GB Storage</li>
+                            <li>✔ 10 Users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Standard Plan -->
+            <div class="col-md-3 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Standard</h3>
+                        <a href="https://genrapide.bnr360.com/signup" class="cta-button mt-3">Select Plan</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ 1,000,000 Tokens</li>
+                            <li>✔ 30 Documents</li>
+                            <li>✔ 977 MB Storage</li>
+                            <li>✔ 20 Users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Premium Plan -->
+            <div class="col-md-3 mb-4">
+                <div class="solution-table h-100">
+                    <div class="solution-header">
+                        <h3>Premium</h3>
+                        <a href="https://genrapide.bnr360.com/signup" class="cta-button mt-3">Select Plan</a>
+                    </div>
+                    <div class="solution-body">
+                        <ul class="list-unstyled">
+                            <li>✔ 10,000 Tokens</li>
+                            <li>✔ 10 Documents</li>
+                            <li>✔ 95 MB Storage</li>
+                            <li>✔ 30 Users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div> 
+</div>
+
+<!-- services pricing -->
+<div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+<div class="container text-center my-5">
+    <!-- Main Heading -->
+    <h1 class="haeding"><span class="highlight">BnR 360 Services  </span> Subscription Plans</h1>
+<p>Steal Deal 
+
+    10% off on Free Trial for the first 3 months if converted within 30 days. </p>
+    <!-- Pricing Table Section -->
+    <div class="row justify-content-center mt-2">
+        <!-- Features Column -->
+        <div class="col-md-2 mb-4">
+            <div class="solution-body">
+                <ul class="list-unstyled" style="margin-top: 230px;">
+                    <li><strong>Recruiter:</strong></li>
+                    <li><strong>Bid/Resume Writer:</strong></li>
+                    <li><strong>Admin Support:</strong></li>
+                    <li><strong>Consultation Call:</strong></li>
+                    <li><strong>Reports:</strong></li>
+                    <li><strong>GenRapide AI Access:</strong></li>
+                    <li><strong>Sphere ERP/CRM Access:</strong></li>
+                    <li><strong>Priority Support:</strong></li>
+                    <li><strong>Customer Success Manager:</strong></li>
+                    <li><strong>Add-ons/ Premiums:</strong></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Free Trial Column -->
+        <div class="col-md-2 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Free Trial</h3>
+                    <p class="price">Free</p>
+                    <p class="description">Looking for the perfect</p>
+                    <a href="#" class="cta-button mt-3">Free Trial</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 1 (10 hours total)</li>
+                        <li>✔ 1 (5 hours total)</li>
+                        <li>✔ 5 Hours</li>
+                        <li>✔ 1 Free</li>
+                        <li>✔ Basic Progress Report</li>
+                        <li>✔ 1 AI-generated bid (Optional)</li>
+                        <li>✘</li>
+                        <li>✘</li>
+                        <li>✘</li>
+                        <li>✘</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Basic Plan Column -->
+        <div class="col-md-2 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$2,499/month</p>
+                    <p class="description">Perfect for Small Agencies</p>
+                    <a href="#" class="cta-button mt-3">$2,499/mo</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 1 Full-Time</li>
+                        <li>✔ 1 Full-Time</li>
+                        <li>✔ 20 Hours</li>
+                        <li>✔ Monthly Strategy Call</li>
+                        <li>✔ Basic Reports</li>
+                        <li>✘</li>
+                        <li>✘</li>
+                        <li>✘</li>
+                        <li>✔</li>
+                        <li>✔</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Professional Plan Column -->
+        <div class="col-md-2 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Professional Plan</h3>
+                    <p class="price">$5,499/month</p>
+                    <p class="description">Ideal for Growing Businesses</p>
+                    <a href="#" class="cta-button mt-3">$5,499/mo</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 1 Full-Time</li>
+                        <li>✔ 2 Full-Time</li>
+                        <li>✔ 50 Hours</li>
+                        <li>✔ Weekly Strategy Call</li>
+                        <li>✔ Priority Reports</li>
+                        <li>✔ Basic Access</li>
+                        <li>✔</li>
+                        <li>✔ (for Bids/Resumes)</li>
+                        <li>✔</li>
+                        <li>✔</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Enterprise Plan Column -->
+        <div class="col-md-2 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Enterprise Plan</h3>
+                    <p class="price">Custom Pricing</p>
+                    <p class="description">Tailored for Large Agencies</p>
+                    <a href="#" class="cta-button mt-3">Talk Sales</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 3+ Full-Time</li>
+                        <li>✔ 3+ Full-Time</li>
+                        <li>✔ Dedicated Admin Team (Unlimited)</li>
+                        <li>✔ Weekly/Custom as required</li>
+                        <li>✔ Advanced Reports</li>
+                        <li>✔ Full Access</li>
+                        <li>✔ Full Access</li>
+                        <li>✔ 24/7 Priority Support</li>
+                        <li>✔</li>
+                        <li>✔ Customizable based on needs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
+
+
+<!-- solution table -->
+<div class="tab-pane fade" id="solution" role="tabpanel" aria-labelledby="solution-tab">
+<div class="container text-center my-5">
+    <!-- Main Heading -->
+    <h1 class="haeding">BnR360 Specialized solution packages <span class="highlight"></span>  </h1>
+    <div class="underline"></div>
+    <!-- Pricing Table Section -->
+    <div class="row justify-content-center">
+        <!-- Column for Feature Headings -->
+        <div class="col-md-3 mb-4">
+            <div class="h-100">
+                <!-- <div class="solution-header">
+                    <h3>Included Features</h3>
+                </div> -->
+                <div class="solution-body">
+                    <ul class="list-unstyled" style="margin-top: 280px;">
+                        <li><strong>Recruiters (Full-Time)</strong>:</li>
+                        <li><strong>Bid Writers (Full-Time)</strong>:</li>
+                        <li><strong>Admin Support</strong>:</li>
+                        <li><strong>GenRapide AI Access</strong>:</li>
+                        <li><strong>Sphere ERP/CRM Access</strong>:</li>
+                        <li><strong>Monthly Strategy Calls</strong>:</li>
+                        <li><strong>Custom Integration</strong>:</li>
+                        <li><strong>Priority Support</strong>:</li>
+                        <li><strong>Compliance Setup</strong>:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Column 1: Agency Launch -->
+        <div class="col-md-3 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Agency Launch</h3>
+                    <p class="price">$2,599/month</p>
+                    <p>+ $4,999 Setup Fee</p>
+                    <p class="description">Start your agency strong</p>
+                    <a href="../pages/contact.html" class="cta-button mt-5">Start Now</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 1</li>
+                        <li>✔ 1</li>
+                        <li>✔ Part-Time</li>
+                        <li>✔ Basic</li>
+                        <li>✔ Basic</li>
+                        <li>✔ 1 Call</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Column 2: Expansion & Scale -->
+        <div class="col-md-3 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Expansion & Scale</h3>
+                    <p class="price">$5,699/month</p>
+                    <p>+ $7,499 Setup Fee</p>
+                    <p class="description">Grow your operations</p>
+                    <a href="../pages/contact.html" class="cta-button mt-5">Get Started</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 2</li>
+                        <li>✔ 2</li>
+                        <li>✔ Expanded Full-Time</li>
+                        <li>✔ Full Access</li>
+                        <li>✔ Full ERP Integration</li>
+                        <li>✔ Monthly Sessions</li>
+                        <li>✔ Advanced</li>
+                        <li>✔</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Column 3: Government RFP Mastery -->
+        <div class="col-md-3 mb-4">
+            <div class="solution-table h-100">
+                <div class="solution-header">
+                    <h3>Government RFP Mastery</h3>
+                    <p class="price">$2,999/month</p>
+                    <p>+ $9,999 Setup Fee</p>
+                    <p class="description">Master government contracts</p>
+                    <a href="../pages/contact.html" class="cta-button mt-4">Talk to Sales</a>
+                </div>
+                <div class="solution-body">
+                    <ul class="list-unstyled">
+                        <li>✔ 1 (Govt Specialist)</li>
+                        <li>✔ 1 (Govt Proposals/RFP Writer)</li>
+                        <li>✔ Full-Time Admin</li>
+                        <li>✔ Full Access (Govt Focus)</li>
+                        <li>✔ Full ERP Integration</li>
+                        <li>✔ Priority Strategy Support</li>
+                        <li>✔ Custom Integration</li>
+                        <li>✔ Priority Support</li>
+                        <li>✔ Government Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+    <!-- <div class="wrap-pricings">
+        <div class="package-box">
+            <img class="pricing-sphere" src="../images/spheres.webp" alt="">
+            <div class="price-toggler-container">
+                <span class="month">Monthly</span>
+                <div class="price-toggler"></div>
+                <span class="year">Yearly</span>
+            </div>
+        </div>
+
+        <div class="container px-4">
+            <div class="prc slider" style="gap: 8px; position: relative;">
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-rr-star logs"></i>
+                        <h2 class="pricing-head py-2">Trial</h2>
+                    </div>
+
+                    <div class=" httt-101">
+                        <span>Dive in with Zero Risk: Start Your Free Trial Today!
+                        </span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">0</span>
+                            <span class="duration">Per month</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span  class="f10" style="height: 115px;">
+                            Explore our services with a 14-days Free Trial- no commitments, just the freedom to discover
+                            what
+                            works for you.
+                        </span>
+
+                
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-trial">Try Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between  flex-column httt-100">
+                        <i class="fi fi-tr-bolt logs"></i>
+                        <h2 class="pricing-head py-2">Standard</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>Dive in with Zero Risk: Start Your Free Trial Today!</span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">15</span>
+                            <span class="duration">per month</span>
+                        </div>
+                    </div>
+                 
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span class="f10" style="height: 115px;">
+
+                            The Standard Package steps it up with enhanced capabilities and additional services,
+                            tailored
+                            for those who require a bit more to meet their needs.
+                        </span>
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-premium">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="material-icons-outlined logsss">
+                            diamond
+                        </i>
+                        <h2 class="pricing-head py-2">Premium</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>Elevate Your Experience with Our Elite Premium Package</span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="price">30</span>
+                            <span class="duration">per month</span>
+                        </div>
+                    </div>
+                  
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span  class="f10" style="height: 115px;">
+
+                            Unlock full access with our Premium Package, featuring exclusive services and the highest
+                            level
+                            of support for top-tier performance.
+                        </span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://sphere.bnr360.com/signup-premium">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <i class="fi fi-ss-angle-small-left faa"></i>
+        <i class="fi fi-ss-angle-small-right baa"></i>
+    </div> -->
+
+
+    <!-- <div class="wrap-pricings">
+        <div class="package-box">
+            <img class="pricing-gen" src="../images/GenRapide Logo-new.webp" alt="">
+            <div class="price-togglers-container">
+                <span class="month">Monthly</span>
+                <div class="price-togglers"></div>
+                <span class="year">Yearly</span>
+            </div>
+        </div>
+
+        <div class="container px-4">
+            <div class="prc genPlan" style="position: relative;">
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-rr-star logs"></i>
+                        <h2 class="pricing-head py-2">Basic</h2>
+                    </div>
+
+                    <div class="httt-101">
+                        <span>All the Essentials, None of the Fuss</span>
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">15</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+
+                        <span class="f10" style="height: 115px;">
+                            Get started with our Basic Package, designed to provide the fundamentals with no
+                            frills—ideal
+                            for anyone stepping into our services.
+                        </span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="fi fi-tr-bolt logs"></i>
+                        <h2 class="pricing-head py-2">Standard</h2>
+
+                    </div>
+
+                    <div class="httt-101">
+
+
+                        <span>The Sweet Spot Between Essentials and Extras!</span>
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">30</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                 
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+
+                        <span class="f10" style="height: 115px;">
+
+                            Experience a balanced blend of functionality and value with our Standard Package, which
+                            offers
+                            more tools and features for your everyday tasks.
+                        </span>
+
+                        <div  class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="pricing-card">
+                    <div class="d-flex justify-content-between flex-column httt-100">
+                        <i class="material-icons-outlined logsss">
+                            diamond
+                        </i>
+                        <h2 class="pricing-head py-2">Premium</h2>
+
+                    </div>
+
+                    <div class="httt-101">
+
+
+                        <span>Where Top-Tier Features Meet Unparalleled Service!
+                        </span>
+
+                        <div class="amount">
+                            <span class="dollor">$</span>
+                            <span class="prices">45</span>
+                            <span class="durations">per month</span>
+                        </div>
+                    </div>
+                  
+
+                    <div style="display: flex; flex-direction: column; height: 100%;">
+                        <span class="f10" style="height: 115px;"> The Premium Package is our most comprehensive offering, designed for those
+                            who demand the
+                            best in quality and advanced features.</span>
+
+
+                        <div class="d" style="margin: 30px 0px;">
+                            <a class="pricing-btn" href="https://genrapide.bnr360.com/signin">Buy Now
+                                <i class="fa-light fa fa-arrow-right"
+                                    style="position: relative; top: 1px; font-size: 15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fi fi-ss-angle-small-left fon"></i>
+        <i class="fi fi-ss-angle-small-right bak"></i>
+    </div> -->
+
+
+
+    <div class="main-footer">
+        <footer class="three">
+
+            <div class="container">
+                <div class="row g-lg-4 gy-5">
+                    <div class="col-lg-4 col-sm-6 d-flex">
+                        <div class="footer-widget">
+                            <div class="footer-contact">
+                                <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                            </div>
+                            <div class="footer-contact mb-40">
+                                <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                    href="mailto:support@bnr360.com">support@bnr360.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Products</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/genrapide.html">GenRapide</a></li>
+                                    <li><a href="../pages/sphere.html">Sphere</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/service.html">TurnKey Solutions</a></li>
+                                    <li><a href="../pages/service.html">Enterprise</a></li>
+                                    <li><a href="../pages/service.html">Pay Per Need</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Resources</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="../pages/contact.html">Contact</a></li>
+                                    <li><a href="../pages/blogs.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-btn-content">
+                                <div class="copyright-area">
+                                    <p>©Copyright 2024</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="../js/script.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 820) {
+                    $('.slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.faa'),
+                        nextArrow: $('.baa'),
+                    });
+                } else {
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.slider').hasClass('slick-initialized')) {
+                    $('.slider').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 821) {
+                    $('.genPlan').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.fon'),
+                        nextArrow: $('.bak'),
+                    });
+                } else {
+                    $('.genPlan').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.genPlan').hasClass('slick-initialized')) {
+                    $('.genPlan').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+
+
+        const OpenButton = document.querySelector(".header-toggle")
+        const CloseButton = document.querySelector(".header-close")
+
+        OpenButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.add("active")
+        })
+
+        CloseButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.remove("active")
+        })
+
+        function togglePricing() {
+    const isChecked = document.getElementById("price-toggle").checked;
+    const monthlyPrices = document.querySelectorAll(".monthly-price");
+    const yearlyPrices = document.querySelectorAll(".yearly-price");
+    const standardPriceBtn = document.querySelector(".standard-price-btn");
+    const proPriceBtn = document.querySelector(".pro-price-btn");
+
+    if (isChecked) {
+        document.getElementById("toggle-text").textContent = "Yearly";
+        monthlyPrices.forEach(price => price.classList.add("d-none"));
+        yearlyPrices.forEach(price => price.classList.remove("d-none"));
+        standardPriceBtn.textContent = "$26.99/mo";
+        proPriceBtn.textContent = "$89.99/mo";
+    } else {
+        document.getElementById("toggle-text").textContent = "Monthly";
+        monthlyPrices.forEach(price => price.classList.remove("d-none"));
+        yearlyPrices.forEach(price => price.classList.add("d-none"));
+        standardPriceBtn.textContent = "$29.99/mo";
+        proPriceBtn.textContent = "$99.99/mo";
+    }
+}
+
+    </script>
+     <script>
+        function hideOtherTabs(tabList, tab, tabPrefix) {
+            for (index = 0; index < tabList.length; index++) {
+                if (tabPrefix + tab != tabPrefix + tabList[index]) {
+                    $('div#' + tabPrefix + tabList[index]).hide();
+                }
+            }
+        }
+        
+        $(document).ready(function() {
+            var tabPrefix = 'home_';
+            var tabs = ['tab1', 'tab2', 'tab3'];
+        
+            // Hide all tabs initially
+            for (index = 0; index < tabs.length; index++) {
+                jQuery('div#' + tabPrefix + tabs[index]).hide();
+            }
+        
+            // Show the first tab by default
+            var firstTab = tabs[0];
+            $('div#' + tabPrefix + firstTab).show();
+        
+            // Set the first tab as active
+            $('ul.tab_links li#' + firstTab).addClass('active');
+        
+            // Hide others
+            hideOtherTabs(tabs, firstTab, tabPrefix);
+        
+            // Set up click event for tab links
+            $('ul.tab_links li').click(function() {
+                var tabID = $(this).attr('id');
+        
+                // Show this tab
+                $('div#' + tabPrefix + tabID).show();
+        
+                // Hide others
+                hideOtherTabs(tabs, tabID, tabPrefix);
+        
+                // Remove active class from all tabs and add to the current one
+                $('ul.tab_links li').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+        </script>
+</body>
+
+</html>

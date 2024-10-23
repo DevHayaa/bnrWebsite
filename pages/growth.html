@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<style>
+    body{
+        background: linear-gradient(to left, rgba(78, 84, 200, 0.1) 30%, rgba(255, 255, 255, 0) 100%);
+
+    }
+</style>
+
+<body>
+ 
+    <nav class="shadow-sm">
+        <div class="wrapper">
+          <div class="logo ms-xl-5"><a href="../index.html"><img src="../images/BnR360.webp" height="68" width="120" srcset=""></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links mt-3">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li>
+                <a href="#" class="desktop-item">Product <i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Product</label>
+            
+                <div class="mega-box">
+                    <div class="content justify-content-center">
+                        <div class="d-lg-flex d-xl-flex col-lg-12 col-xl-12">
+                            <!-- Tabs for switching content -->
+                            <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                <li id='tab1'>
+                                    <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Sphere <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                    <!-- <h6>All-in-one platform for recruitment, CRM, and ERP.</h6> -->
+                                </li>
+                                <li id='tab2'>
+                                    <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Genrapid <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                 <!-- <h6>AI tools for bid prep,resume tailoring, and RFP management.</h6> -->
+                                </li>
+                                <li id='tab3'>
+                                    <a href="#home_tab3" class="tab-link" onclick="showTabContent(event, 'home_tab3')">Supporting Product <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                 <!-- <h6>AI chatbots and parsers for recruitment and bids.</h6> -->
+                                </li>
+                            </ul>
+            
+                            <!-- Content Sections -->
+                            <div class="tab-content col-lg-9 col-xl-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">CRM</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Applicant Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Partner and Client Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Security Management</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">ERP</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Job Tracking</a></li>
+                                                    <li><a href="../pages/sphere.html">Corporate Reference</a></li>
+                                                    <li><a href="../pages/sphere.html">Prowin Prep</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Data Analytics</h6>
+                                                <ul>
+                                                    <li><a href="../pages/sphere.html">Reporting and Dashboard</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab2" style="display:none;">
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">ProReshape</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">AI-enhanced resume tailoring.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">RFP Decoder</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Automated RFP data extraction.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">RFP List</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Organized RFP tracking.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Dashboard</h6>
+                                                <ul>
+                                                    <li><a href="../pages/genrapide.html">Real-time insights for bids and proposals.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab3" style="display:none;">
+                                <div class="content-box mt-4">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">AI Recruitment Chatbot</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Automated candidate engagement.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Resume Parser</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Extracts and organizes resume data.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Prowin Prep</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Bid prep with partner seamless collaboration.</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-3">
+                                                <h6 class="section-title">Exclusive Bundle</h6>
+                                                <ul>
+                                                    <li><a href="../pages/prowin.html">Combo of all supporting products.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <a href="#" class="desktop-item">Services<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownServices" class="toggle-dropdown">
+                <label for="showDropdownServices" class="mobile-item">Services</label>
+            
+                <div class="mega-box">
+                    <div class="content justify-content-center">
+                        <div class="d-xl-flex d-lg-flex col-12">
+                            <!-- Tabs for switching content -->
+                            <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                <li id='tab1'>
+                                    <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Services <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                <!-- <h6>Services 
+                                    Flexible plans with dedicated resources for recruitment and bids. </h6> -->
+                                </li>
+                                <li id='tab2'>
+                                    <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Solutions <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                  <!-- <h6>Turnkey packages for launching and scaling. 
+                                </h6> -->
+                                </li>
+                            </ul>
+            
+                            <!-- Content Sections -->
+                            <div class="tab-content col-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                <div class="content-box">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <!-- Free Trial Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Free Trial</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">No Credit Card needed</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Basic Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Basic</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">For smaller agencies or specific needs</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Professional Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Professional</h6>
+                                                <ul>
+                                                    <li><a href="../pages/service.html">For Growing Agencies</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-content col-9 text-black ms-3 mt-3" id="home_tab2" style="display: none;">
+                                <div class="content-box">
+                                    <div class="containerr ms-3">
+                                        <div class="row">
+                                            <!-- Agency Launch Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Agency Launch</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Setup for new recruitment agencies</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Expansion & Scale Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Expansion & Scale</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Grow with advanced tools.</a></li>
+                                                </ul>
+                                            </div>
+                            
+                                            <!-- Government RFP Mastery Column -->
+                                            <div class="col-lg-4 col-xl-4">
+                                                <h6 class="section-title">Government RFP Mastery</h6>
+                                                <ul>
+                                                    <li><a href="../pages/solution.html">Win complex government bids.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            
+            </li>
+            
+              <li>
+                <a href="#" class="desktop-item">Pricing<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownPricing" class="toggle-dropdown">
+                <label for="showDropdownPricing" class="mobile-item">Pricing</label>
+          
+                <div class="mega-box">
+                  <div class="content justify-content-center">
+                    <!-- Content Sections -->
+                    <div class="active text-dark">
+                        <div class="content-box">
+                          <div class="">
+                            <ul class="d-lg-flex d-xl-flex">
+                              <a href="../pages/pricing.html#sphere"><li>Sphere</li></a>
+                              <a href="../pages/pricing.html#genrapid"><li>Genrapide</li></a>
+                              <a href="../pages/pricing.html#solution"><li>Solution</li></a>
+                              <a href="../pages/pricing.html#service"><li>Services</li></a>
+                              <a href="../pages/pricing.html"><li>Supporting Products</li></a>
+                              <a href="../pages/pricing.html"><li>Pay per need</li></a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>        
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="desktop-item">Resources<i class="fas fa-chevron-down arrow"></i></a>
+                <input type="checkbox" id="showDropdownResources" class="toggle-dropdown">
+                <label for="showDropdownResources" class="mobile-item">Resources</label>
+          
+                <div class="mega-box">
+                  <div class="content justify-content-center">
+                    <!-- Content Sections -->
+                    <div class="active text-dark">
+                        <div class="content-box">
+                          <div class="">
+                            <ul class="d-lg-flex d-xl-flex">
+                              <a href="../pages/blogs.html"><li>Blogs</li></a>
+                              <a href="../pages/case-study.html"><li>Customer stories</li></a>
+                              <a href="../pages/growth.html"> <li>Press release</li></a>
+                              <a href="../pages/contact.html"><li>Help and support</li></a>
+                              <a href="../pages/contact.html"><li>Contact us</li></a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>        
+                  </div>
+                </div>
+              </li>
+              <div class="contact d-lg-flex ms-xl-5">
+                <li class="ms-xl-5">
+                    <a href="#" class="desktop-item">Sign in</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Sign in</label>
+                    <ul class="drop-menu">
+                      <h6 class=""><a href="https://sphere.bnr360.com/login"><i class="fas fa-sign-in mx-2"></i>Sphere</h6></a>
+                      <h6><a href="https://genrapide.bnr360.com/signin"><i class="fas fa-sign-in arrow mx-2"></i>Genrapide</h6></a>
+                    </ul>
+                  </li>
+                  <a class="btxx-two" href="pages/contact.html">Request a Demo</a>
+                  <a class="btxx-one" href="https://sphere.bnr360.com/signup-trial">Start a free trial</a>
+              </div>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"  style="color: black;"></i></label>
+        </div>
+      </nav>
+      
+
+ <div class="container">
+    <section class="announcement mt-5">
+        <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+            <h1 class="haeding">BnR360 Welcomes New Customer Growth: Zernam and Contract Community OnBoard<span class="highlight"></span></h1>
+            <div class="underline"></div>
+            <p class="text-gray-500 italic mb-4">Ottawa, ON – April 30, 2024</p>
+            <p class="text-base">BnR360, a leading provider of AI-driven solutions for bid management and resource optimization, is pleased to announce significant customer growth with two notable additions. Both Zernam and Contract Community have successfully integrated our Sphere ATS (Applicant Tracking System) into their operations, each utilizing the platform with 20 active users.</p>
+        </div>
+    </section>
+ 
+    <section class="growth mb-8">
+        <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+            <h1 class="haeding">Customer Growth<span class="highlight"></span></h1>
+            <div class="underline"></div>
+            <p class="text-base">This increase in customer volumes demonstrates the value and scalability of BnR360’s product suite, specifically tailored to meet the dynamic needs of government contractors and consulting agencies. Sphere’s capabilities streamline recruitment, proposal preparation, and resource management, all while cutting operational costs by up to 50%.</p>
+        </div>
+    </section>
+ 
+    <section class="quote mb-8">
+        <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+            <blockquote class="border-l-4 border-gray-300 pl-4 italic text-lg bg-gray-50 p-4 rounded">
+                <p>"Our focus is on delivering tailored solutions that not only meet our clients’ immediate needs but also allow them to expand and improve their operational efficiency," said Aashaz Syed, BnR360’s CIO.</p>
+            </blockquote>
+        </div>
+    </section>
+ 
+    <section class="commitment mb-8">
+        <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+            <h1 class="haeding">Continued Commitment<span class="highlight"></span></h1>
+            <div class="underline"></div>
+            <p class="text-base">As BnR360 continues its growth trajectory, the company remains committed to supporting its clients with cutting-edge tools and services, helping them achieve measurable success in the sectors they serve.</p>
+            <p class="text-base">For more information about BnR360’s product offerings and how we help clients enhance their bid management and recruitment processes, visit <a href="https://www.bnr360.com" class="text-blue-500 hover:underline">www.bnr360.com</a>.</p>
+        </div>
+    </section>
+ 
+    <section class="about mb-8">
+        <div class="max-w-4xl mx-auto p-6 rounded-lg shadow-md">
+            <h1 class="haeding">About BnR360<span class="highlight"></span></h1>
+            <div class="underline"></div>
+            <p class="text-base">BnR360 offers turn-key solutions that combine AI-powered tools like Sphere and GenRapide, designed to optimize resource management, recruitment, and RFP responses for recruiting and bidding agencies. With a focus on government contractors and consulting agencies, BnR360 helps businesses reduce costs while ensuring privacy and confidentiality.</p>
+        </div>
+    </section>
+ </div>
+</body>
+</html>
+ 
+<script>
+    function hideOtherTabs(tabList, tab, tabPrefix) {
+        for (index = 0; index < tabList.length; index++) {
+            if (tabPrefix + tab != tabPrefix + tabList[index]) {
+                $('div#' + tabPrefix + tabList[index]).hide();
+            }
+        }
+    }
+    
+    $(document).ready(function() {
+        var tabPrefix = 'home_';
+        var tabs = ['tab1', 'tab2', 'tab3'];
+    
+        // Hide all tabs initially
+        for (index = 0; index < tabs.length; index++) {
+            jQuery('div#' + tabPrefix + tabs[index]).hide();
+        }
+    
+        // Show the first tab by default
+        var firstTab = tabs[0];
+        $('div#' + tabPrefix + firstTab).show();
+    
+        // Set the first tab as active
+        $('ul.tab_links li#' + firstTab).addClass('active');
+    
+        // Hide others
+        hideOtherTabs(tabs, firstTab, tabPrefix);
+    
+        // Set up click event for tab links
+        $('ul.tab_links li').click(function() {
+            var tabID = $(this).attr('id');
+    
+            // Show this tab
+            $('div#' + tabPrefix + tabID).show();
+    
+            // Hide others
+            hideOtherTabs(tabs, tabID, tabPrefix);
+    
+            // Remove active class from all tabs and add to the current one
+            $('ul.tab_links li').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+    </script>

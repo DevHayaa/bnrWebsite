@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+
+</head>
+<body>
+  <!-- Spinner Loader -->
+  <div id="loader"
+    class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center bg-dark opacity-50 d-none">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <nav class="shadow-sm">
+    <div class="wrapper">
+      <div class="logo ms-xl-5"><a href="../index.html"><img src="../images/BnR360.webp" height="68" width="120" srcset=""></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links mt-3">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+            <a href="#" class="desktop-item">Product <i class="fas fa-chevron-down arrow"></i></a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Product</label>
+        
+            <div class="mega-box">
+                <div class="content justify-content-center">
+                    <div class="d-lg-flex d-xl-flex col-lg-12 col-xl-12">
+                        <!-- Tabs for switching content -->
+                        <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                            <li id='tab1'>
+                                <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Sphere <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                <!-- <h6>All-in-one platform for recruitment, CRM, and ERP.</h6> -->
+                            </li>
+                            <li id='tab2'>
+                                <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Genrapid <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                             <!-- <h6>AI tools for bid prep,resume tailoring, and RFP management.</h6> -->
+                            </li>
+                            <li id='tab3'>
+                                <a href="#home_tab3" class="tab-link" onclick="showTabContent(event, 'home_tab3')">Supporting Product <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                             <!-- <h6>AI chatbots and parsers for recruitment and bids.</h6> -->
+                            </li>
+                        </ul>
+        
+                        <!-- Content Sections -->
+                        <div class="tab-content col-lg-9 col-xl-9 active text-black ms-3 mt-3" id='home_tab1'>
+                            <div class="content-box mt-4">
+                                <div class="containerr ms-3">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">CRM</h6>
+                                            <ul>
+                                                <li><a href="../pages/sphere.html">Applicant Tracking</a></li>
+                                                <li><a href="../pages/sphere.html">Partner and Client Tracking</a></li>
+                                                <li><a href="../pages/sphere.html">Security Management</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">ERP</h6>
+                                            <ul>
+                                                <li><a href="../pages/sphere.html">Job Tracking</a></li>
+                                                <li><a href="../pages/sphere.html">Corporate Reference</a></li>
+                                                <li><a href="../pages/sphere.html">Prowin Prep</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Data Analytics</h6>
+                                            <ul>
+                                                <li><a href="../pages/sphere.html">Reporting and Dashboard</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab2" style="display:none;">
+                            <div class="content-box mt-4">
+                                <div class="containerr ms-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">ProReshape</h6>
+                                            <ul>
+                                                <li><a href="../pages/genrapide.html">AI-enhanced resume tailoring.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">RFP Decoder</h6>
+                                            <ul>
+                                                <li><a href="../pages/genrapide.html">Automated RFP data extraction.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">RFP List</h6>
+                                            <ul>
+                                                <li><a href="../pages/genrapide.html">Organized RFP tracking.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">Dashboard</h6>
+                                            <ul>
+                                                <li><a href="../pages/genrapide.html">Real-time insights for bids and proposals.</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab3" style="display:none;">
+                            <div class="content-box mt-4">
+                                <div class="containerr ms-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">AI Recruitment Chatbot</h6>
+                                            <ul>
+                                                <li><a href="../pages/prowin.html">Automated candidate engagement.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">Resume Parser</h6>
+                                            <ul>
+                                                <li><a href="../pages/prowin.html">Extracts and organizes resume data.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">Prowin Prep</h6>
+                                            <ul>
+                                                <li><a href="../pages/prowin.html">Bid prep with partner seamless collaboration.</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3">
+                                            <h6 class="section-title">Exclusive Bundle</h6>
+                                            <ul>
+                                                <li><a href="../pages/prowin.html">Combo of all supporting products.</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li>
+            <a href="#" class="desktop-item">Services<i class="fas fa-chevron-down arrow"></i></a>
+            <input type="checkbox" id="showDropdownServices" class="toggle-dropdown">
+            <label for="showDropdownServices" class="mobile-item">Services</label>
+        
+            <div class="mega-box">
+                <div class="content justify-content-center">
+                    <div class="d-xl-flex d-lg-flex col-12">
+                        <!-- Tabs for switching content -->
+                        <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                            <li id='tab1'>
+                                <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Services <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                            <!-- <h6>Services 
+                                Flexible plans with dedicated resources for recruitment and bids. </h6> -->
+                            </li>
+                            <li id='tab2'>
+                                <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Solutions <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                              <!-- <h6>Turnkey packages for launching and scaling. 
+                            </h6> -->
+                            </li>
+                        </ul>
+        
+                        <!-- Content Sections -->
+                        <div class="tab-content col-9 active text-black ms-3 mt-3" id='home_tab1'>
+                            <div class="content-box">
+                                <div class="containerr ms-3">
+                                    <div class="row">
+                                        <!-- Free Trial Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Free Trial</h6>
+                                            <ul>
+                                                <li><a href="../pages/service.html">No Credit Card needed</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                        <!-- Basic Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Basic</h6>
+                                            <ul>
+                                                <li><a href="../pages/service.html">For smaller agencies or specific needs</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                        <!-- Professional Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Professional</h6>
+                                            <ul>
+                                                <li><a href="../pages/service.html">For Growing Agencies</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content col-9 text-black ms-3 mt-3" id="home_tab2" style="display: none;">
+                            <div class="content-box">
+                                <div class="containerr ms-3">
+                                    <div class="row">
+                                        <!-- Agency Launch Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Agency Launch</h6>
+                                            <ul>
+                                                <li><a href="../pages/solution.html">Setup for new recruitment agencies</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                        <!-- Expansion & Scale Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Expansion & Scale</h6>
+                                            <ul>
+                                                <li><a href="../pages/solution.html">Grow with advanced tools.</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                        <!-- Government RFP Mastery Column -->
+                                        <div class="col-lg-4 col-xl-4">
+                                            <h6 class="section-title">Government RFP Mastery</h6>
+                                            <ul>
+                                                <li><a href="../pages/solution.html">Win complex government bids.</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                        
+        </li>
+        
+          <li>
+            <a href="#" class="desktop-item">Pricing<i class="fas fa-chevron-down arrow"></i></a>
+            <input type="checkbox" id="showDropdownPricing" class="toggle-dropdown">
+            <label for="showDropdownPricing" class="mobile-item">Pricing</label>
+      
+            <div class="mega-box">
+              <div class="content justify-content-center">
+                <!-- Content Sections -->
+                <div class="active text-dark">
+                    <div class="content-box">
+                      <div class="">
+                        <ul class="d-lg-flex d-xl-flex">
+                          <a href="../pages/pricing.html#sphere"><li>Sphere</li></a>
+                          <a href="../pages/pricing.html#genrapid"><li>Genrapide</li></a>
+                          <a href="../pages/pricing.html#solution"><li>Solution</li></a>
+                          <a href="../pages/pricing.html#service"><li>Services</li></a>
+                          <a href="../pages/pricing.html"><li>Supporting Products</li></a>
+                          <a href="../pages/pricing.html"><li>Pay per need</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>        
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Resources<i class="fas fa-chevron-down arrow"></i></a>
+            <input type="checkbox" id="showDropdownResources" class="toggle-dropdown">
+            <label for="showDropdownResources" class="mobile-item">Resources</label>
+      
+            <div class="mega-box">
+              <div class="content justify-content-center">
+                <!-- Content Sections -->
+                <div class="active text-dark">
+                    <div class="content-box">
+                      <div class="">
+                        <ul class="d-lg-flex d-xl-flex">
+                          <a href="../pages/blogs.html"><li>Blogs</li></a>
+                          <a href="../pages/case-study.html"><li>Customer stories</li></a>
+                          <a href="../pages/growth.html"> <li>Press release</li></a>
+                          <a href="../pages/contact.html"><li>Help and support</li></a>
+                          <a href="../pages/contact.html"><li>Contact us</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>        
+              </div>
+            </div>
+          </li>
+          <div class="contact d-lg-flex ms-xl-5">
+            <li class="ms-xl-5">
+                <a href="#" class="desktop-item">Sign in</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Sign in</label>
+                <ul class="drop-menu">
+                  <h6 class=""><a href="https://sphere.bnr360.com/login"><i class="fas fa-sign-in mx-2"></i>Sphere</h6></a>
+                  <h6><a href="https://genrapide.bnr360.com/signin"><i class="fas fa-sign-in arrow mx-2"></i>Genrapide</h6></a>
+                </ul>
+              </li>
+              <a class="btxx-two" href="pages/contact.html">Request a Demo</a>
+              <a class="btxx-one" href="https://sphere.bnr360.com/signup-trial">Start a free trial</a>
+          </div>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"  style="color: black;"></i></label>
+    </div>
+  </nav>
+  
+
+  <div class="pricing-banner">
+    <div class="px-10">
+      <div class="pricing-inner">
+        <div class="contact-left-side">
+          <h1 class="haeding" style="text-align: start;font-size: 40px; color: white;">Contact US<span class="highlight"></span></h1>
+         <p style="font-size: 25px; color: white;">Want to learn how we can help you out? 
+        </p>
+        <p style="font-size: 20px; color: white;">1-844-BnR-360-1 (1-844-267-3601).
+        </p>
+        </div>
+
+        <div class="col-md-3 mt-5">
+          <div class="benefit-box mt-5" style="height: 250px;    transform: perspective(50em) rotatey(25deg);">
+              <h3 style="font-size: 20px;">Talk to sales</h3>
+              <p>Want more info or a custom solution? Contact our sales team to see how we can help. </p>
+              <p><i class="fa fa-envelope mx-2"></i> <a
+              href="mailto:support@bnr360.com"> sales@bnr360.com</a></p>
+             <p> <i class="fa fa-phone mx-2" ></i><a href="tel:+16135671875">+1 (613) 867-6649</a></p>
+              <!-- <div class="form-btn">
+                  <button type="submit">Contact Sales 
+                    
+                    </a>
+                </div> -->
+          </div>
+      </div>
+      <div class="col-md-3 mt-5">
+          <div class="benefit-box" style="height: 250px;transform: perspective(50em) rotatey(335deg);margin-top: 25px;
+    transform-style: preserve-3d;">
+              <h3 style="font-size: 20px;">Need help?</h3>
+              <p>Need assistance? Submit a support request or reach out to our team—we're here to help.</p>   
+                      
+              <p><i class="fa fa-envelope mx-2"></i> <a
+                  href="mailto:support@bnr360.com">support@bnr360.com</a></p>
+                 <p><i class="fa fa-phone mx-2" ></i><a href="tel:+16135671875">+1 (613) 567-1875</a></p> 
+                  <!-- <div class="form-btn">
+                      <button type="submit">Contact Support
+                        
+                        </a>
+                    </div> -->
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Error Alert -->
+  <div id="errorAlert" data-aos="fade-up" style="top: 10%;" class="position-fixed start-50 translate-middle d-none">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </symbol>
+    </svg>
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div id="errorText">
+        Something went wrong! Please try again leter.
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Alert -->
+  <div id="successAlert" data-aos="fade-up" style="top: 10%;" class="position-fixed start-50 translate-middle d-none">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+      </symbol>
+    </svg>
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+        <use xlink:href="#check-circle-fill" />
+      </svg>
+      <div>
+        Thank you for contacting us. We will get back to you soon.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h3 class="heading mt-3 text-center">Let's Connect!</h3>
+    <div class="contact-form-container" id="contact-form">
+        <form id="myForm" name="myForm" onsubmit="return contactMe()">
+            <div id="loader" class="d-none">Loading...</div>
+            <div id="errorAlert" class="d-none">Error Message</div>
+            <div id="successAlert" class="d-none">Success Message</div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name*</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name*</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email*</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="companyName" class="form-label">Company Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-building"></i>
+                        </span>
+                        <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Enter your company name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="organizationType" class="form-label">Organization Type*</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-sitemap"></i>
+                        </span>
+                        <select class="form-select" id="organizationType" name="organizationType" required>
+                            <option selected disabled value="">Select organization type</option>
+                            <option value="1">Bidding and Recruiting</option>
+                            <option value="2">Talent Acquisition</option>
+                            <option value="3">Corporate HR</option>
+                            <option value="4">Proposal Writing Firm</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="requestType" class="form-label">Request Type*</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-list"></i>
+                        </span>
+                        <select class="form-select" id="requestType" name="requestType" required>
+                            <option selected disabled value="">Select request type</option>
+                            <option value="Products">Products</option>
+                            <option value="Services">Services</option>
+                            <option value="Solutions">Solutions (Products & Services)</option>
+                            <option value="Customer Support">Customer Support</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="country" class="form-label">Country</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-globe"></i>
+                        </span>
+                        <select class="form-select" id="selectCountry" name="selectCountry">
+                            <option value="">Choose Country</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="numUsers" class="form-label">Number of Users</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-users"></i>
+                        </span>
+                        <input type="number" class="form-control" id="numUsers" name="numUsers" placeholder="Enter number of users">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-comment"></i>
+                    </span>
+                    <textarea class="form-control" id="description" name="description" rows="5" placeholder="Describe your request" maxlength="1000"></textarea>
+                </div>
+            </div>
+
+            <div class="form-btn text-center">
+                <button type="submit" class="btn btn-primary">Submit
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Loader, Success and Error Alerts -->
+        <div id="loader" class="d-none">Loading...</div>
+        <div id="successAlert" class="alert alert-success d-none">Success! Form submitted.</div>
+        <div id="errorAlert" class="alert alert-danger d-none">Error! Please try again.</div>
+        <div id="errorText" class="text-danger"></div>
+    </div>
+</div>
+
+  <!-- contact to sale -->
+  <div class="container">
+    <h3 class="heading mt-3 text-center">Head Office!</h3>
+    <div class="row justify-content-between">
+      <!-- Map Section -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.3456616598014!2d-75.7094199!3d45.402368800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04345684397f%3A0x898d8588c7e60960!2s343%20Preston%20St%2C%20Ottawa%2C%20ON%20K1S%201N4%2C%20Canada!5e0!3m2!1sen!2s!4v1729014874881!5m2!1sen!2s"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- address card -->
+ <div class="container my-5">
+  <div class="row">
+    <!-- First row with 3 cards -->
+    <!-- Canada -->
+    <div class="col-lg-4 mb-4">
+      <div class="location-card">
+        <h4>Canada</h4>
+        <p>343 Preston Street, Ottawa<br>Canada</p>
+        <p>+1 613-691-8396<br>+1 613-567-1875</p>
+        <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br>
+        <a href="mailto:support@bnr360.com">support@bnr360.com</a>
+      </div>
+    </div>
+    <!-- United States -->
+    <div class="col-lg-4 mb-4">
+      <div class="location-card">
+        <h4>United States</h4>
+        <p>5539 Carrollton Court, Oakland Twp<br>MI, USA 48306</p>
+        <p>+1 586-215-6282</p>
+        <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br>
+        <a href="mailto:support@bnr360.com">support@bnr360.com</a>
+      </div>
+    </div>
+    <!-- United Kingdom -->
+    <div class="col-lg-4 mb-4">
+      <div class="location-card">
+        <h4>United Kingdom</h4>
+        <p>Unit 4, Smith House, Elmwood Avenue<br>Feltham, London, UK</p>
+        <p>+44 7440132278</p>
+        <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br>
+        <a href="mailto:support@bnr360.com">support@bnr360.com</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <!-- Second row with 2 cards -->
+    <!-- Australia -->
+    <div class="col-lg-4 mb-4">
+      <div class="location-card">
+        <h4>Australia</h4>
+        <p>Suite 207, Level 2/45 Leakes Road<br>Laverton North VIC 3026, Australia</p>
+        <p>+61 415 574 545</p>
+        <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br>
+        <a href="mailto:support@bnr360.com">support@bnr360.com</a>
+      </div>
+    </div>
+    <!-- New Zealand -->
+    <div class="col-lg-4 mb-4">
+      <div class="location-card">
+        <h4>New Zealand</h4>
+        <p>46 John Gray Street, Takanini<br>Auckland, New Zealand</p>
+        <p>+64 22 400 6349</p>
+        <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br>
+        <a href="mailto:support@bnr360.com">support@bnr360.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--faq--->
+  <div class="wrap-faq">
+    <h2 class="heading1 text-center">FAQs</h2>
+    <div class="accordion accords py-4" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item border-0 bg-transparent faq-align">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button bg-transparent " type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            <h3 class="con-number1">01</h3>
+            <h3 class="con-heading">How can I get in touch with customer support?
+            </h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <p class="con-para">You can reach our customer support team via email at support@bnr360.com or by
+              using the contact form on this page. We're here to help with any inquiries or issues you may encounter.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 bg-transparent faq-align">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            <h3 class="con-number">02</h3>
+            <h3 class="con-heading">What are your customer service hours?
+            </h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <p class="con-para">Our customer service team is available from 9:00 AM to 04:30 PM EST, Monday
+              through Friday. We strive to respond to all inquiries within 24 business hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 bg-transparent faq-align">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            <h3 class="con-number">03</h3>
+            <h3 class="con-heading">Where is your company located?
+            </h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <p class="con-para">We operate in multiple locations. For specific inquiries about our different
+              offices, please use the contact form.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 bg-transparent faq-align">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour">
+            <h3 class="con-number">04</h3>
+            <h3 class="con-heading">How do I provide feedback or a complaint?
+            </h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <p class="con-para">Your feedback is important to us. Please use the contact form on this page to
+              send us your thoughts or concerns. If you have a complaint, we will ensure it's addressed promptly and
+              effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item border-0 bg-transparent faq-align">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFive">
+            <h3 class="con-number">05</h3>
+            <h3 class="con-heading">Is there an FAQ section for product/service-related
+              questions?
+            </h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            <p class="con-para">Yes, for more specific questions about our products/services, please visit our
+              FAQ section of the relevant product page. There you'll find detailed answers to common queries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--faq end-->
+
+  <div class="main-footer">
+    <footer class="three">
+
+      <div class="container">
+        <div class="row g-lg-4 gy-5">
+          <div class="col-lg-4 col-sm-6 d-flex">
+            <div class="footer-widget">
+              <div class="footer-contact mb-40">
+               <a href="https://maps.app.goo.gl/Rh5xebk2EdY7n3am9" target="_blank">343 Preston
+                  Street, Ottawa, Canada</a>
+              </div>
+              <div class="footer-contact mb-40">
+               <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                  href="mailto:support@bnr360.com">support@bnr360.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Products</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/genrapide.html">GenRapide</a></li>
+                  <li><a href="../pages/sphere.html">Sphere</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Services</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/service.html">TurnKey Solutions</a></li>
+                  <li><a href="../pages/service.html">Enterprise</a></li>
+                  <li><a href="../pages/service.html">Pay Per Need</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Resources</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/contact.html">Contact</a></li>
+                  <li><a href="../pages/blogs.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-btn-content">
+                <div class="copyright-area">
+                  <p>©Copyright 2024</p>
+                </div>
+                <div class="footer-social">
+                  <ul>
+                    <li><a href="https://www.facebook.com/people/BnR360/100093720805116/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/BnR360" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                          class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    function hideOtherTabs(tabList, tab, tabPrefix) {
+        for (index = 0; index < tabList.length; index++) {
+            if (tabPrefix + tab != tabPrefix + tabList[index]) {
+                $('div#' + tabPrefix + tabList[index]).hide();
+            }
+        }
+    }
+    
+    $(document).ready(function() {
+        var tabPrefix = 'home_';
+        var tabs = ['tab1', 'tab2', 'tab3'];
+    
+        // Hide all tabs initially
+        for (index = 0; index < tabs.length; index++) {
+            jQuery('div#' + tabPrefix + tabs[index]).hide();
+        }
+    
+        // Show the first tab by default
+        var firstTab = tabs[0];
+        $('div#' + tabPrefix + firstTab).show();
+    
+        // Set the first tab as active
+        $('ul.tab_links li#' + firstTab).addClass('active');
+    
+        // Hide others
+        hideOtherTabs(tabs, firstTab, tabPrefix);
+    
+        // Set up click event for tab links
+        $('ul.tab_links li').click(function() {
+            var tabID = $(this).attr('id');
+    
+            // Show this tab
+            $('div#' + tabPrefix + tabID).show();
+    
+            // Hide others
+            hideOtherTabs(tabs, tabID, tabPrefix);
+    
+            // Remove active class from all tabs and add to the current one
+            $('ul.tab_links li').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+    </script>
+  <script>
+    const OpenButton = document.querySelector(".header-toggle")
+    const CloseButton = document.querySelector(".header-close")
+
+    OpenButton.addEventListener("click", () => {
+      mainWrapper = document.getElementById("wrap");
+      mainWrapper.classList.add("active")
+    })
+
+    CloseButton.addEventListener("click", () => {
+      mainWrapper = document.getElementById("wrap");
+      mainWrapper.classList.remove("active")
+    })
+  </script>
+  <script src="../js/contact.js"></script>
+    <script>
+      var select = document.getElementById("selectCountry");
+      
+      var countries = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+          
+      //console.log(countries);
+      //console.log(select);
+          
+      for (var i = 0; i < countries.length; i++) {
+          
+          var option = document.createElement("option"); 
+        //for every turn of the loop create an option tag
+          //console.log(option);
+          var txt = document.createTextNode(countries[i]); 
+        //for every turn of the loop create the inner text
+          //console.log(txt);
+          option.appendChild(txt); 
+        //for every turn of the loop put the words from txt inside the <option> tags
+          //console.log(option);
+          option.setAttribute("value",countries[i]); //for every turn of the loop set the value attribute to corresponding country name
+          //console.log(option);
+          select.insertBefore(option,select.lastChild);
+          //console.log(select);
+          
+      }
+      
+      document.addEventListener ('DOMContentLoaded', function() {
+          //console.log('DOM fully loaded and parsed');
+          document.querySelector('select[name="selectCountry"]').onchange = alertCountry;
+           }, false);
+          
+      // function alertCountry(event) {
+      //     //console.log('DOM loaded');
+      //     //use "this" to refer to selected element
+      //     if(!event.target.value) alert('Please select a country');
+      //     else alert('You chose ' + event.target.value + '. Yay, grab a beer!');
+      // }
+  </script>
+
+</body>
+
+</html>

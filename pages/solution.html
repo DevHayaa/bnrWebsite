@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BnR360</title>
+    <link rel="icon" type="image/x-icon" href="./images/Favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>        
+        <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    </head>
+    
+    <body>
+        <nav class="shadow-sm">
+            <div class="wrapper">
+              <div class="logo ms-xl-5"><a href="../index.html"><img src="../images/BnR360.webp" height="68" width="120" srcset=""></a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links mt-3">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Product <i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Product</label>
+                
+                    <div class="mega-box">
+                        <div class="content justify-content-center">
+                            <div class="d-lg-flex d-xl-flex col-lg-12 col-xl-12">
+                                <!-- Tabs for switching content -->
+                                <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                    <li id='tab1'>
+                                        <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Sphere <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                        <!-- <h6>All-in-one platform for recruitment, CRM, and ERP.</h6> -->
+                                    </li>
+                                    <li id='tab2'>
+                                        <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Genrapid <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                     <!-- <h6>AI tools for bid prep,resume tailoring, and RFP management.</h6> -->
+                                    </li>
+                                    <li id='tab3'>
+                                        <a href="#home_tab3" class="tab-link" onclick="showTabContent(event, 'home_tab3')">Supporting Product <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                     <!-- <h6>AI chatbots and parsers for recruitment and bids.</h6> -->
+                                    </li>
+                                </ul>
+                
+                                <!-- Content Sections -->
+                                <div class="tab-content col-lg-9 col-xl-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">CRM</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Applicant Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Partner and Client Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Security Management</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">ERP</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Job Tracking</a></li>
+                                                        <li><a href="../pages/sphere.html">Corporate Reference</a></li>
+                                                        <li><a href="../pages/sphere.html">Prowin Prep</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Data Analytics</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/sphere.html">Reporting and Dashboard</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab2" style="display:none;">
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">ProReshape</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">AI-enhanced resume tailoring.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">RFP Decoder</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Automated RFP data extraction.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">RFP List</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Organized RFP tracking.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Dashboard</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/genrapide.html">Real-time insights for bids and proposals.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-lg-9 col-xl-9 text-black ms-3 mt-3" id="home_tab3" style="display:none;">
+                                    <div class="content-box mt-4">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">AI Recruitment Chatbot</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Automated candidate engagement.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Resume Parser</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Extracts and organizes resume data.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Prowin Prep</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Bid prep with partner seamless collaboration.</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 col-xl-3">
+                                                    <h6 class="section-title">Exclusive Bundle</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/prowin.html">Combo of all supporting products.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Services<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownServices" class="toggle-dropdown">
+                    <label for="showDropdownServices" class="mobile-item">Services</label>
+                
+                    <div class="mega-box">
+                        <div class="content justify-content-center">
+                            <div class="d-xl-flex d-lg-flex col-12">
+                                <!-- Tabs for switching content -->
+                                <ul class="tab_links col-lg-3 col-xl-3 text-black">
+                                    <li id='tab1'>
+                                        <a href="#home_tab1" class="tab-link" onclick="showTabContent(event, 'home_tab1')">Services <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                    <!-- <h6>Services 
+                                        Flexible plans with dedicated resources for recruitment and bids. </h6> -->
+                                    </li>
+                                    <li id='tab2'>
+                                        <a href="#home_tab2" class="tab-link" onclick="showTabContent(event, 'home_tab2')">Solutions <i class="fas fa-chevron-right arrow" style="color:#37376b;"></i></a>
+                                      <!-- <h6>Turnkey packages for launching and scaling. 
+                                    </h6> -->
+                                    </li>
+                                </ul>
+                
+                                <!-- Content Sections -->
+                                <div class="tab-content col-9 active text-black ms-3 mt-3" id='home_tab1'>
+                                    <div class="content-box">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <!-- Free Trial Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Free Trial</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">No Credit Card needed</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Basic Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Basic</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">For smaller agencies or specific needs</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Professional Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Professional</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/service.html">For Growing Agencies</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-content col-9 text-black ms-3 mt-3" id="home_tab2" style="display: none;">
+                                    <div class="content-box">
+                                        <div class="containerr ms-3">
+                                            <div class="row">
+                                                <!-- Agency Launch Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Agency Launch</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Setup for new recruitment agencies</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Expansion & Scale Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Expansion & Scale</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Grow with advanced tools.</a></li>
+                                                    </ul>
+                                                </div>
+                                
+                                                <!-- Government RFP Mastery Column -->
+                                                <div class="col-lg-4 col-xl-4">
+                                                    <h6 class="section-title">Government RFP Mastery</h6>
+                                                    <ul>
+                                                        <li><a href="../pages/solution.html">Win complex government bids.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                
+                </li>
+                
+                  <li>
+                    <a href="#" class="desktop-item">Pricing<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownPricing" class="toggle-dropdown">
+                    <label for="showDropdownPricing" class="mobile-item">Pricing</label>
+              
+                    <div class="mega-box">
+                      <div class="content justify-content-center">
+                        <!-- Content Sections -->
+                        <div class="active text-dark">
+                            <div class="content-box">
+                              <div class="">
+                                <ul class="d-lg-flex d-xl-flex">
+                                  <a href="../pages/pricing.html#sphere"><li>Sphere</li></a>
+                                  <a href="../pages/pricing.html#genrapid"><li>Genrapide</li></a>
+                                  <a href="../pages/pricing.html#solution"><li>Solution</li></a>
+                                  <a href="../pages/pricing.html#service"><li>Services</li></a>
+                                  <a href="../pages/pricing.html"><li>Supporting Products</li></a>
+                                  <a href="../pages/pricing.html"><li>Pay per need</li></a>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>        
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="desktop-item">Resources<i class="fas fa-chevron-down arrow"></i></a>
+                    <input type="checkbox" id="showDropdownResources" class="toggle-dropdown">
+                    <label for="showDropdownResources" class="mobile-item">Resources</label>
+              
+                    <div class="mega-box">
+                      <div class="content justify-content-center">
+                        <!-- Content Sections -->
+                        <div class="active text-dark">
+                            <div class="content-box">
+                              <div class="">
+                                <ul class="d-lg-flex d-xl-flex">
+                                  <a href="../pages/blogs.html"><li>Blogs</li></a>
+                                  <a href="../pages/case-study.html"><li>Customer stories</li></a>
+                                  <a href="../pages/growth.html"> <li>Press release</li></a>
+                                  <a href="../pages/contact.html"><li>Help and support</li></a>
+                                  <a href="../pages/contact.html"><li>Contact us</li></a>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>        
+                      </div>
+                    </div>
+                  </li>
+                  <div class="contact d-lg-flex ms-xl-5">
+                    <li class="ms-xl-5">
+                        <a href="#" class="desktop-item">Sign in</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Sign in</label>
+                        <ul class="drop-menu">
+                          <h6 class=""><a href="https://sphere.bnr360.com/login"><i class="fas fa-sign-in mx-2"></i>Sphere</h6></a>
+                          <h6><a href="https://genrapide.bnr360.com/signin"><i class="fas fa-sign-in arrow mx-2"></i>Genrapide</h6></a>
+                        </ul>
+                      </li>
+                      <a class="btxx-two" href="pages/contact.html">Request a Demo</a>
+                      <a class="btxx-one" href="https://sphere.bnr360.com/signup-trial">Start a free trial</a>
+                  </div>
+              </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"  style="color: black;"></i></label>
+            </div>
+          </nav>
+          
+  <!--hero banner-->
+  <div class="service-banner">
+  <div class=" pt-2 ">
+    <div class="serv-banner">
+        <div class="left-service-banner">
+            <h2>BnR360 Solutions: Your Growth Partner </h2>
+            <p>At BnR360, we believe in making business growth simple. Whether you're just starting out or ready to scale, we’ve got the right tools and expertise to get you there. From managing bids and recruitment to providing strategic support, we ensure you stay ahead of the competition. Our easy-to-use AI-powered solutions streamline your operations, allowing you to focus on growth. </p>
+            <div class="button-container">
+                <a class="btc first-sec" href="#solution-table">Check Pricing </a>
+                <!-- <a class="btc second-sec" href="../pages/pricing.html">Customize</a> -->
+            </div>
+        </div>
+    </div>
+        <div class="service-right">
+            <img class="service-pic img-fluid" src="../images/Mobile.webp" alt="BnR360 Service Image">
+        </div>
+    </div>
+</div>
+
+<!--hero banner end-->
+<div class="agency-heading">
+    <h1 class="haeding">Launch Your Agency with <span class="highlight">Confidence</span></h1>
+    <p>Starting a new agency? We've got everything you need to hit the ground running—minus the headaches.</p>
+</div>
+
+<!-- section 1 -->
+<div class="agency-container">
+    <div class="section">
+        <div class="icon">⚙️</div>
+        <h2>Complete Setup</h2>
+        <p>We’ll build your recruitment and bidding processes from scratch, so you don’t have to.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">📋</div>
+        <h2>Hands-On Training</h2>
+        <p>We train your team to navigate daily operations smoothly—whether it’s finding top talent or submitting winning bids.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">🧑‍💼</div>
+        <h2>We’ve Got Your Back</h2>
+        <p>Full-time recruiters, expert bid writers, and admin support are at your service. Let us handle the backend while you focus on building relationships and closing deals.</p>
+    </div>
+
+    <div class="section">
+        <div class="icon">🌟</div>
+        <h2>Why Choose This Package?</h2>
+        <p>Because starting strong is half the battle. We help you get the foundation right so you can focus on what matters—growing your business.</p>
+    </div>
+</div>
+
+<div class="cta">
+    <a href="../pages/contact.html">Let’s Get Started →</a>
+</div>
+
+<!-- section 2 -->
+<div class="container my-5">
+    <!-- Heading Section -->
+        <h1 class="haeding">Ready to Scale? Let’s<span class="highlight"> Grow Together!</span></h1>
+        <p>Is your talent acquisition and RFP management agency bursting at the seams? That’s a good problem to have! With our Expansion & Growth Package, you’ll be able to handle more business without sacrificing quality or burning out your team.</p>
+   
+
+    <!-- Content Section with Text and Image -->
+    <div class="contents-section">
+        <div class="text-section">
+            <h2>Smarter Processes</h2>
+            <p>We optimize what you’re already doing, making your workflows faster and smoother.</p>
+
+            <h2>Build Your Dream Team</h2>
+            <p>With additional recruiters and bid writers, you’ll have the resources to take on bigger, more complex projects.</p>
+
+            <h2>Strategic Support</h2>
+            <p>Monthly check-ins with our experts ensure you’re always moving in the right direction.</p>
+
+            <h2>Why Choose This Package?</h2>
+            <p>You’ve put in the hard work, now it’s time to scale. We help you grow strategically, so you don’t lose control or quality.</p>
+
+            <a href="../pages/contact.html" class="cta-button">Let’s Talk Growth →</a>
+        </div>
+
+        <div class="image-section">
+            <img src="../images/smartprocess.jpg" alt="Growth Image">
+        </div>
+    </div>
+</div>
+
+<!-- section 3 -->
+<div class="container">
+    <!-- Heading Section -->
+        <h1 class="haeding"><span class="highlight">Government</span> Contracts Made Easy</h1>
+
+    <!-- Content Section with Bullet Points and Image -->
+    <div class="contents-section">
+        <div class="text-section">
+            <ul>
+                <li><strong>Compliance, Handled:</strong> We set up your systems to meet strict government requirements, so you don’t have to worry about missing any details.</li>
+
+                <li><strong>Specialized Support:</strong> Our dedicated government bid writer and recruiter know exactly what it takes to win those contracts.</li>
+
+                <li><strong>We’ll Manage the Paperwork:</strong> From documentation to compliance management, we’ve got it covered.</li>
+
+                <li><strong>Why Choose This Package?</strong> Government contracts are tricky, but they’re worth it. We make sure your agency is perfectly positioned to compete and win.</li>
+            </ul>
+
+            <a href="../pages/contact.html" class="cta-button">See How We Can Help →</a>
+        </div>
+
+        <div class="image-section">
+            <img src="../images/contract.jpg" alt="Government Contracts Image">
+        </div>
+    </div>
+</div>
+
+<!-- section 4 -->
+<section class="success-section">
+    <div class="container">
+        <h1>Customize Your Success</h1>
+        <p class="subtext">
+            We know one size doesn’t fit all. That’s why we offer custom solutions for agencies that need a little bit more—or less. Whether you need an extra recruiter, more administrative support, or expert bid writers, we’ll build a package that’s right for you.
+        </p>
+        <a href="../pages/contact.html" class="cta-button">Start Building Your Custom Plan →</a>
+    </div>
+</section>
+
+
+
+
+
+    <div class="main-footer">
+        <footer class="three">
+            <div class="container">
+                <div class="row g-lg-4 gy-5">
+                    <div class="col-lg-4 col-sm-6 d-flex">
+                        <div class="footer-widget">
+                            <div class="footer-contact ">
+                              
+                                <a target="_blank">343 Preston Street, Ottawa, Canada</a>
+                            </div>
+                            <div class="footer-contact mb-40">
+                                <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                                    href="mailto:support@bnr360.com">support@bnr360.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Products</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/genrapide.html">GenRapide</a></li>
+                                    <li><a href="/pages/sphere.html">Sphere</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Services</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="pages/service.html">TurnKey Solutions</a></li>
+                                    <li><a href="pages/service.html">Enterprise</a></li>
+                                    <li><a href="/pages/service.html">Pay Per Need</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h4>Resources</h4>
+                            </div>
+                            <div class="menu-container">
+                                <ul>
+                                    <li><a href="/pages/contact.html">Contact</a></li>
+                                    <li><a href="/pages/blogs.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-btn-content">
+                                <div class="copyright-area">
+                                    <p>©Copyright 2024</p>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/people/BnR360/100093720805116/"
+                                                target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/BnR360" target="_blank"><i
+                                                    class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function hideOtherTabs(tabList, tab, tabPrefix) {
+            for (index = 0; index < tabList.length; index++) {
+                if (tabPrefix + tab != tabPrefix + tabList[index]) {
+                    $('div#' + tabPrefix + tabList[index]).hide();
+                }
+            }
+        }
+        
+        $(document).ready(function() {
+            var tabPrefix = 'home_';
+            var tabs = ['tab1', 'tab2', 'tab3'];
+        
+            // Hide all tabs initially
+            for (index = 0; index < tabs.length; index++) {
+                jQuery('div#' + tabPrefix + tabs[index]).hide();
+            }
+        
+            // Show the first tab by default
+            var firstTab = tabs[0];
+            $('div#' + tabPrefix + firstTab).show();
+        
+            // Set the first tab as active
+            $('ul.tab_links li#' + firstTab).addClass('active');
+        
+            // Hide others
+            hideOtherTabs(tabs, firstTab, tabPrefix);
+        
+            // Set up click event for tab links
+            $('ul.tab_links li').click(function() {
+                var tabID = $(this).attr('id');
+        
+                // Show this tab
+                $('div#' + tabPrefix + tabID).show();
+        
+                // Hide others
+                hideOtherTabs(tabs, tabID, tabPrefix);
+        
+                // Remove active class from all tabs and add to the current one
+                $('ul.tab_links li').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+        </script>
+    <script>
+        $(document).ready(function () {
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1024) {
+                    $('.slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.prev'),
+                        nextArrow: $('.next'),
+                    });
+                } else {
+                    $('.slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.slider').hasClass('slick-initialized')) {
+                    $('.slider').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1024) {
+                    $('.feature').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.previous'),
+                        nextArrow: $('.nexts'),
+                    });
+                } else {
+                    $('.feature').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.feature').hasClass('slick-initialized')) {
+                    $('.feature').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1025) {
+                    $('.sphre').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.pre'),
+                        nextArrow: $('.nex'),
+                    });
+                } else {
+                    $('.sphre').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.sphre').hasClass('slick-initialized')) {
+                    $('.sphre').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 1025) {
+                    $('.gen').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: $('.fans'),
+                        nextArrow: $('.pens'),
+                    });
+                } else {
+                    $('.gen').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.gen').hasClass('slick-initialized')) {
+                    $('.gen').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        $(document).ready(function () {
+
+            // Initialize the slider
+            function initSlider() {
+                if ($(window).width() < 768) {
+                    $('.multiple').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        prevArrow: $('.fan'),
+                        nextArrow: $('.pen'),
+                    });
+                } else {
+                    $('.multiple').slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        // Add any other options you need
+                    });
+                }
+            }
+
+            initSlider(); // Initial call to set up the slider
+
+            // Function to reinitialize the slider
+            function reinitSlider() {
+                if ($('.multiple').hasClass('slick-initialized')) {
+                    $('.multiple').slick('unslick'); // Destroy the current initialization
+                }
+                initSlider(); // Re-initialize the slider
+            }
+
+            // Event listener for window resize
+            $(window).resize(function () {
+                reinitSlider(); // Call the reinitialize function on resize
+            });
+        });
+
+        const OpenButton = document.querySelector(".header-toggle")
+        const CloseButton = document.querySelector(".header-close")
+
+        OpenButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.add("active")
+        })
+
+        CloseButton.addEventListener("click", () => {
+            mainWrapper = document.getElementById("wrap");
+            mainWrapper.classList.remove("active")
+        })
+
+
+        window.addEventListener("scroll", function () {
+
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.inner-nav a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Remove 'active' class from all links
+                    navLinks.forEach(function (navLink) {
+                        navLink.classList.remove('active');
+                    });
+
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+        });
+
+    </script>
+    <script src="js/contact.js"></script>
+
+   <script>
+    const animatedWord = document.querySelector('.animated-word');
+const staticText = document.querySelector('.static-text');
+
+const words = ['Manage', 'Track', 'Automate', 'Outsource'];
+const colors = ['#ff045a', '#3e85e3', '#8bc34a', '#2196f3'];
+
+let currentWordIndex = 0;
+
+function animateWords() {
+    const word = words[currentWordIndex];
+    const color = colors[currentWordIndex];
+
+    animatedWord.classList.add('fade-out');
+    setTimeout(() => {
+        animatedWord.textContent = word;
+        animatedWord.classList.remove('fade-out');
+        animatedWord.style.color = color;
+    }, 500);
+
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+
+    setTimeout(animateWords, 2000);
+}
+
+animateWords();
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+trigger:
+- master
+
+stages:
+# Build Stage (just collects files)
+- stage: Build
+  jobs:
+  - job: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    # No build is needed for static websites, just copy the files
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'  # The source directory where the static website files are located
+        Contents: '**/*'  # Include all files in the source directory
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'  # Staging directory for artifacts
+
+    # Publish the files as an artifact
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: '$(Build.ArtifactStagingDirectory)'  # Staging directory that holds the files
+        artifactName: 'drop'  # Artifact name
+        publishLocation: 'Container'  # Publish to pipeline container
+
+# Deployment Stage
+- stage: Deploy
+  dependsOn: Build
+  jobs:
+  - deployment: DeployToVM
+    environment: 'Deployment'  # The environment in Azure DevOps
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          # Download the build artifact (website files)
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: 'drop'  # The name of the published artifact
+              downloadPath: '$(System.ArtifactsDirectory)'  # Directory where the artifact will be downloaded
+
+          # Copy the files over SSH to the server
+          - task: CopyFilesOverSSH@0
+            inputs:
+              sshEndpoint: 'MyVmConnection'  # SSH service connection to your VM
+              sourceFolder: '$(System.ArtifactsDirectory)/drop'  # Directory where the downloaded files are located
+              targetFolder: '/home/azureuser/Website/'  # Target folder on the server (adjust to your web server root)
+              cleanTargetFolder: true  # Optional Clean the target folder before copying files
+
+          # Restart Nginx after copying the files
+          - task: SSH@0
+            inputs:
+              sshEndpoint: 'MyVmConnection'  # SSH connection to the VM
+              runOptions: 'inline'
+              inline: |
+                sudo systemctl restart nginx  # Adjust this based on your server setup
+              failOnStdErr: true

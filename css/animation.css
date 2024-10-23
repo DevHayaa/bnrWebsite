@@ -1,0 +1,346 @@
+
+  /*button animation*/  
+  .btc {
+    background-color: white;
+    color: #37376b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .first-sec:hover {
+    color: #37376b;
+    text-decoration: none;
+  }
+
+
+  .first-sec {
+    margin-right: 20px;
+}
+
+.second-sec {
+  margin-right: 20px;
+}
+.second-sec {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second-sec:hover {
+    background-color: white;
+    color: #37376b;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.product-btn {
+  background-color: transparent;
+  text-decoration: none;
+  color: #37376b;
+  padding: 10px 20px;
+  border: 1px solid #37376b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-btn:hover {
+  background-color: #37376b;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.third-sec {
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.third-sec:hover {
+  background-color: white;
+    color: #37376b;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+  /*hero banner end*/
+
+  .btx {
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ff045a;
+    color: #ff045a;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+  }
+  
+  .btx-animation:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btx::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff045a;
+    transition: 0.8s;
+    z-index: -1;
+  }
+  
+  .btx-animation::before {
+    top: 0;
+  }
+  
+  
+  .btx-animation:hover::before {
+    width: 100%;
+  }
+
+  /*our story end*/
+  .card-btn {
+    text-decoration: none;
+    padding: 8px 10px;
+    animation-name: expand;
+    position: relative;
+    border: 1px solid #ff045a;
+    color: #ff045a;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-btn1:hover {
+    text-decoration: none;
+    color: #f5f4ff;
+  }
+  
+  
+  .card-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff045a;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  
+  .card-btn1::before {
+    top: 0;
+  }
+  
+  .card-btn1:hover::before {
+    width: 100%;
+  }
+  /*services end*/
+ 
+  .card-btx {
+    text-decoration: none;
+    padding: 8px 10px;
+    animation-name: expand;
+    position: relative;
+    border: 1px solid #ff045a;
+    color: #ff045a;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-btx2:hover {
+    text-decoration: none;
+    color: #f5f4ff;
+  }
+  
+  .card-btx::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff045a;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  
+  .card-btx2::before {
+    top: 0;
+  }
+  
+  .card-btx2:hover::before {
+    width: 100%;
+  }
+
+  .card-btx {
+    text-decoration: none;
+    padding: 8px 10px;
+    animation-name: expand;
+    position: relative;
+    border: 1px solid #ff045a;
+    color: #ff045a;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-btx3:hover {
+    text-decoration: none;
+    color: #f5f4ff;
+  }
+  
+  .card-btx::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff045a;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  
+  .card-btx3::before {
+    top: 0;
+  }
+  
+  .card-btx3:hover::before {
+    width: 100%;
+  }
+  /*product end*/
+
+  
+.feature-btn {
+  text-decoration: none;
+  padding: 8px 10px;
+  animation-name: expand;
+  position: relative;
+  border: 1px solid #ff045a;
+  color: #ff045a;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-btn1:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.feature-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ff045a;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.feature-btn1::before {
+  top: 0;
+
+}
+
+.feature-btn1:hover::before {
+  width: 100%;
+}
+/*feature end*/
+  
+    
+/* .last-btx {
+  text-decoration: none;
+  padding: 8px 40px;
+  animation-name: expand;
+  position: relative;
+  border: 1px solid #ff045a;
+  color: #ff045a;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.last-btx4:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.last-btx::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ff045a;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.last-btx4::before {
+  top: 0;
+
+}
+
+.last-btx4:hover::before {
+  width: 100%;
+}
+ 
+
+.first-btx {
+  text-decoration: none;
+  padding: 8px 30px;
+  animation-name: expand;
+  position: relative;
+  border: 1px solid #ff045a;
+  color: #ff045a;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.first-btx4:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.first-btx::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ff045a;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.first-btx4::before {
+  top: 0;
+
+}
+
+.first-btx4:hover::before {
+  width: 100%;
+} */
+
+ 
+ 
+
+ 
+  
+ 

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="../images/Favicon.jpg">
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Spinner Loader -->
+  <div id="loader"
+    class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center bg-dark opacity-50 d-none">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div>
+    <header>
+      <div class="head1 px-10 hide">
+        <a href="/index.html">
+          <img src="../images/BnR360.webp " alt="">
+        </a>
+        <div>
+
+          <button id="member" class="btn dropdown-toggle" style="border: none;padding-top: 25px;" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Product Sign in
+          </button>
+          <ul class="dropdown-menu" style="background-color: black; color:white;">
+            <li><a class="dropdown-item inner-drop" href="https://sphere.bnr360.com/login">Sphere</a></li>
+            <li><a class="dropdown-item inner-drop" href="https://genrapide.bnr360.com/signin">GenRapide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation px-10">
+        <i class="fi fi-sr-menu-burger ban header-toggle"></i>
+
+        <ul class="inner-nav" id="wrap">
+          <i class="fi fi-sr-circle-xmark header-close banq"></i>
+          <li><a class="butn navs" href="../index.html">Home</a></li>
+          <li type="button" id="productLi" onclick="openProducts()">
+            <button type="button" onblur="blurProducts()" class="border-0 bg-black">
+              <a id="member" class="btn dropdown-toggle navs small-screen"
+                style="border: none;padding-top: 0px; color: white; font-size: 20px;" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Product
+              </a>
+              <ul class="dropdown-menu drop" style="background-color: black; color:white; min-width: 0;">
+                <li><a class="dropdown-item inner-drop " href="../pages/sphere.html">Sphere</a></li>
+                <li><a class="dropdown-item inner-drop " href="../pages/genrapide.html">GenRapide</a></li>
+                <li><a class="dropdown-item inner-drop " href="../pages/prowin.html">Prowin Prep</a></li>
+
+              </ul>
+            </button>
+
+
+          </li>
+
+
+
+
+          <li><a class="butn navs" href="../pages/service.html">Services</a></li>
+          <li><a class="butn" href="../pages/growth.html">Press Release</a></li>
+          <li><a class="butn" href="/pages/blogs.html">Blogs</a></li>
+          <li><a class="butn" href="pages/case-study.html">Case Study</a></li>
+          <li><a class="butn" href="/pages/pricing.html">Pricing</a></li>
+
+        </ul>
+
+        <a class="btxx" href="../pages/contact.html">Contact Us</a>
+
+      </div>
+
+    </header>
+  </div>
+<section style="  background: linear-gradient(to right, rgba(78, 84, 200, 0.1) 30%, rgba(255, 255, 255, 0) 100%);
+">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="margin-top: 70px;">
+            <h1 class="haeding" style="text-align: start;">We’re Here to Help</h1>
+            <p>Have any questions? Our team is ready to provide the answers you need. Reach out to us today!</p>            <p></p>
+           <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="benefit-box" style="height: 350px;">
+                    <h3 style="font-size: 20px;">Talk to sales</h3>
+                    <p>Want more info or a custom solution? Contact our sales team to see how we can help. </p>
+                    <p><i class="fa fa-envelope mx-2"></i> <a
+                    href="mailto:support@bnr360.com"> sales@bnr360.com</a></p>
+                   <p> <i class="fa fa-phone mx-2" ></i><a href="tel:+16135671875">+1 (613) 867-6649</a></p>
+                    <!-- <div class="form-btn">
+                        <button type="submit">Contact Sales 
+                          
+                          </a>
+                      </div> -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="benefit-box" style="height: 350px;">
+                    <h3 style="font-size: 20px;">Need help?</h3>
+                    <p>Need assistance? Submit a support request or reach out to our team—we're here to help.</p>   
+                            
+                    <p><i class="fa fa-envelope mx-2"></i> <a
+                        href="mailto:support@bnr360.com">support@bnr360.com</a></p>
+                       <p><i class="fa fa-phone mx-2" ></i><a href="tel:6135671875">(613) 567-1875</a></p> 
+                        <!-- <div class="form-btn">
+                            <button type="submit">Contact Support
+                              
+                              </a>
+                          </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-6">
+            <div class="container">
+                <h3 class="haeding mt-3">Book a Meeting!</h3>
+                <div class="contact-form-container" id="contact-form">
+                    <form id="myForm" name="myForm" onsubmit="return contactMe()">
+                        <div id="loader" class="d-none">Loading...</div>
+                        <div id="errorAlert" class="d-none">Error Message</div>
+                        <div id="successAlert" class="d-none">Success Message</div>
+                    
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Enter your company name">
+                            </div>
+                        </div>
+                    
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="organizationType" class="form-label">Organization Type*</label>
+                                <select class="form-select" id="organizationType" name="organizationType" required>
+                                    <option selected disabled value="">Select organization type</option>
+                                    <option value="1">Bidding and Recruiting</option>
+                                    <option value="2">Talent Acquisition</option>
+                                    <option value="3">Corporate HR</option>
+                                    <option value="4">Proposal Writing Firm</option>
+                                    <option value="5">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="requestType" class="form-label">Request Type*</label>
+                                <select class="form-select" id="requestType" name="requestType" required>
+                                    <option selected disabled value="">Select request type</option>
+                                    <option value="Products">Products</option>
+                                    <option value="Services">Services</option>
+                                    <option value="Solutions">Solutions (Products & Services)</option>
+                                    <option value="Customer Support">Customer Support</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="selectCountry" name="selectCountry">
+                                    <option value="">Choose Country</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="numUsers" class="form-label">Number of Users</label>
+                                <input type="number" class="form-control" id="numUsers" name="numUsers" placeholder="Enter number of users">
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="5" placeholder="Describe your request" maxlength="1000"></textarea>
+                        </div>
+                    
+                        <div class="form-btn text-center">
+                            <button type="submit">Submit
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    
+                    
+                    <!-- Loader, Success and Error Alerts -->
+                    <div id="loader" class="d-none">Loading...</div>
+                    <div id="successAlert" class="alert alert-success d-none">Success! Form submitted.</div>
+                    <div id="errorAlert" class="alert alert-danger d-none">Error! Please try again.</div>
+                    <div id="errorText" class="text-danger"></div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+  <div class="main-footer">
+    <footer class="three">
+
+      <div class="container">
+        <div class="row g-lg-4 gy-5">
+          <div class="col-lg-4 col-sm-6 d-flex">
+            <div class="footer-widget">
+              <div class="footer-contact mb-40">
+               <a href="https://maps.app.goo.gl/Rh5xebk2EdY7n3am9" target="_blank">343 Preston
+                  Street, Ottawa, Canada</a>
+              </div>
+              <div class="footer-contact mb-40">
+               <a href="mailto:sales@bnr360.com">sales@bnr360.com</a><br><a
+                  href="mailto:support@bnr360.com">support@bnr360.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Products</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/genrapide.html">GenRapide</a></li>
+                  <li><a href="../pages/sphere.html">Sphere</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Services</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/service.html">TurnKey Solutions</a></li>
+                  <li><a href="../pages/service.html">Enterprise</a></li>
+                  <li><a href="../pages/service.html">Pay Per Need</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 d-flex justify-content-sm-end">
+            <div class="footer-widget">
+              <div class="widget-title">
+                <h4>Resources</h4>
+              </div>
+              <div class="menu-container">
+                <ul>
+                  <li><a href="../pages/contact.html">Contact</a></li>
+                  <li><a href="../pages/blogs.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-btn-content">
+                <div class="copyright-area">
+                  <p>©Copyright 2024</p>
+                </div>
+                <div class="footer-social">
+                  <ul>
+                    <li><a href="https://www.facebook.com/people/BnR360/100093720805116/" target="_blank"><i
+                          class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/BnR360" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li><a href="https://ca.linkedin.com/company/bnr360" target="_blank"><i
+                          class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/bnr360.official/ " target="_blank"><i
+                          class="fa-brands fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/contact.js"></script>
+  <script>
+
+
+
+    const OpenButton = document.querySelector(".header-toggle")
+    const CloseButton = document.querySelector(".header-close")
+
+    OpenButton.addEventListener("click", () => {
+      mainWrapper = document.getElementById("wrap");
+      mainWrapper.classList.add("active")
+    })
+
+    CloseButton.addEventListener("click", () => {
+      mainWrapper = document.getElementById("wrap");
+      mainWrapper.classList.remove("active")
+    })
+  </script>
+
+<script>
+    var select = document.getElementById("selectCountry");
+    
+    var countries = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+        
+    //console.log(countries);
+    //console.log(select);
+        
+    for (var i = 0; i < countries.length; i++) {
+        
+        var option = document.createElement("option"); 
+      //for every turn of the loop create an option tag
+        //console.log(option);
+        var txt = document.createTextNode(countries[i]); 
+      //for every turn of the loop create the inner text
+        //console.log(txt);
+        option.appendChild(txt); 
+      //for every turn of the loop put the words from txt inside the <option> tags
+        //console.log(option);
+        option.setAttribute("value",countries[i]); //for every turn of the loop set the value attribute to corresponding country name
+        //console.log(option);
+        select.insertBefore(option,select.lastChild);
+        //console.log(select);
+        
+    }
+    
+    document.addEventListener ('DOMContentLoaded', function() {
+        //console.log('DOM fully loaded and parsed');
+        document.querySelector('select[name="selectCountry"]').onchange = alertCountry;
+         }, false);
+        
+    // function alertCountry(event) {
+    //     //console.log('DOM loaded');
+    //     //use "this" to refer to selected element
+    //     if(!event.target.value) alert('Please select a country');
+    //     else alert('You chose ' + event.target.value + '. Yay, grab a beer!');
+    // }
+</script>
+  <script src="../js/contact.js"></script>
+
+</body>
+
+</html>
